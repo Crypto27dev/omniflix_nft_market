@@ -1,0 +1,117 @@
+.of_community .snackbar {
+    left: 10px;
+    transform: translatex(10px);
+}
+
+.snackbar > div {
+    background: linear-gradient(90.03deg, #0D141A 0.02%, #0F161C 99.98%);
+    border: 1px solid #292929;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px #00000040;
+    border-radius: 10px;
+}
+
+.snackbar .circular_progress {
+    height: auto;
+    margin: 10px;
+}
+
+.snackbar .snackbar_class {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.snackbar .snackbar_class > img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.snackbar .tx_hash {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'zero' on;
+    color: #828282;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.snackbar .tx_hash > p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+.snackbar .tx_hash img {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.snackbar .snackbar_linear_progress {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.snackbar .snackbar_linear_progress > span {
+    border-radius: 10px;
+}
+
+.snackbar .snackbar_linear_progress .success_progress {
+    background: #27ae6000;
+}
+
+.snackbar .snackbar_linear_progress .success_progress > span {
+    background: #27AE60;
+}
+
+.snackbar .snackbar_linear_progress .fail_progress {
+    background: #EB575700;
+}
+
+.snackbar .snackbar_linear_progress .fail_progress > span {
+    background: #EB5757;
+}
+
+.snackbar .snackbar_linear_progress .warning_progress {
+    background: #FAC01E00;
+}
+
+.snackbar .snackbar_linear_progress .warning_progress > span {
+    background: #FAC01E;
+}
+
+@media (max-width: 768px) {
+    .snackbar > div {
+        width: 100%;
+    }
+
+    .snackbar > div > div:first-child {
+        width: 80%;
+    }
+
+    .snackbar .tx_hash > p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}

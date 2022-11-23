@@ -1,0 +1,351 @@
+.buy_nft_dialog > div:nth-child(3) > div {
+    background: #141414;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: unset;
+}
+
+.buy_nft_dialog .buy_nft_dialog_content {
+    background-image: url("../../../../../assets/success_image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buy_nft_dialog .buy_nft_dialog_content h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0 0 35px;
+}
+
+.buy_nft_dialog_content .close_icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 50px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.buy_nft_dialog_content .close_icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+.buy_nft_dialog_content.buy_nft_success > h2 {
+    margin: 30px 0 40px;
+}
+
+.buy_nft_dialog_content.buy_nft_success > span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.buy_nft_dialog_content .tx_hash {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #696969;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.buy_nft_dialog_content .tx_hash > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.buy_nft_dialog_content .tx_hash > div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buy_nft_dialog_content.buy_nft_success .buy_nft_dialog_action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.buy_nft_dialog_action .buy_nft_confirm {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    margin-left: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    text-transform: capitalize;
+}
+
+.buy_nft_dialog_action .buy_nft_confirm:disabled {
+    opacity: 0.5;
+}
+
+.buy_nft_dialog_action .buy_nft_confirm > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/*Success dialog*/
+.buy_nft_dialog_content .card {
+    display: flex;
+    padding: 20px;
+    width: 70%;
+    background: #0E151B;
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.buy_nft_dialog_content .card .nft_type {
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.buy_nft_dialog_content .card .nft_type > p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 5px 10px;
+}
+
+.buy_nft_dialog_content .card .default_thumbnail > img,
+.buy_nft_dialog_content .card > img {
+    width: 160px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.buy_nft_dialog_content .card > .info {
+    flex: 1;
+    text-align: left;
+}
+
+.buy_nft_dialog_content .card .price_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buy_nft_dialog_content .card .price_row .label {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.buy_nft_dialog_content .card .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B7B7B7;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    text-align: left;
+}
+
+.buy_nft_dialog_content .buttons_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buy_nft_dialog_content .note_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #828282;
+    margin-top: 10px;
+}
+
+.buy_nft_dialog_content .card .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F2F2F2;
+}
+
+.buy_nft_dialog_content .card .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(
+            90deg, #D61D6A 6.73%, #7645FF 92.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buy_nft_dialog_content .buttons_div > button {
+    width: 48%;
+}
+
+.buy_nft_dialog_content .info > .label {
+    margin-bottom: 10px;
+}
+
+.buy_nft_dialog_content .card .info {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.buy_nft_dialog_content .card .info .price_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.buy_nft_dialog_content .card .info .price_row .nft_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.buy_nft_dialog_content .card .info .price_row .price_info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.buy_nft_dialog_content .card .info .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.buy_nft_dialog_content .card .info .label .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #B7B7B7;
+}
+
+.buy_nft_dialog_content .card .info .label .hash_text.value {
+    max-width: 160px;
+}
+
+.buy_nft_dialog_content .card .info .price_row .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #B7B7B7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    text-align: left;
+}
+
+.buy_nft_dialog_content .card .info .price_row .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #696969;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    text-align: left;
+}
+
+.buy_nft_dialog_content .card .info .price_row .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .buy_nft_dialog > div:nth-child(3) > div {
+        max-width: 100%;
+        min-width: 100%;
+        padding: 20px;
+    }
+
+    .buy_nft_dialog .buy_nft_dialog_content {
+        height: auto;
+        background-position: 50% 50%;
+    }
+
+    .buy_nft_dialog .buy_nft_dialog_content > img {
+        width: 50px;
+    }
+
+    .buy_nft_dialog_content.buy_nft_success > h2 {
+        margin: 20px 0 30px;
+    }
+
+    .buy_nft_dialog_content .tx_hash {
+        width: 100%;
+    }
+
+    .buy_nft_dialog_content .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buy_nft_dialog_content .card > img {
+        margin: 0 0 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .buy_nft_dialog_content .card {
+        margin: 20px 0;
+        width: 100%;
+    }
+}

@@ -1,0 +1,11 @@
+.no_data {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no_data > img {
+    width: 200px;
+}

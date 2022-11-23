@@ -1,0 +1,121 @@
+.player {
+    position: relative;
+    width: 100%;
+}
+
+.video-js {
+    width: 100%;
+}
+
+.player .video-js .vjs-control-bar {
+    background: #1b1b1bfa;
+    height: 70px;
+}
+
+.player .video-js .vjs-control {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.player .video-js .vjs-current-time {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    position: absolute;
+    right: 60px;
+}
+
+.player .video-js .vjs-progress-control {
+    width: 100%;
+    height: unset;
+    position: absolute;
+}
+
+.player .video-js .vjs-progress-control .vjs-progress-holder {
+    margin: 0;
+    background: #BDBDBD;
+    height: 4px;
+}
+
+.player .video-js .vjs-play-progress {
+    background: linear-gradient(
+            90deg, #D61D6A 0%, #7645FF 100%);
+}
+
+.video-js .vjs-play-progress:before {
+    color: #7745FE;
+}
+
+.video-js .vjs-paused > span:first-child:before {
+    content: '\f102';
+}
+
+.player .video-js .vjs-fullscreen-control {
+    position: absolute;
+    right: 0;
+}
+
+.player .video-js .vjs-big-play-button {
+    display: none;
+}
+
+.player_controls {
+    width: max-content;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transition: visibility 0.1s, opacity 0.1s;
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: max-content;
+}
+
+.vjs-has-started + .player_controls {
+    top: unset;
+    left: 20px;
+    transform: translateX(0%);
+}
+
+.vjs-has-started + .player_controls .skip_buttons .icon {
+    width: 20px;
+}
+
+.player_controls .pause_button .icon,
+.player_controls .play_button .icon {
+    width: 80px;
+}
+
+.player_controls .volume_button .icon {
+    width: 30px;
+}
+
+.vjs-has-started + .player_controls .pause_button .icon,
+.vjs-has-started + .player_controls .play_button .icon {
+    width: 40px;
+}
+
+.vjs-has-started.vjs-user-inactive.vjs-playing + .player_controls {
+    opacity: 0;
+    transition: visibility 1s, opacity 1s;
+}
+
+.vjs-playing + .player_controls .pause_button,
+.vjs-paused + .player_controls .play_button,
+.vjs-has-started + .player_controls .skip_buttons,
+.vjs-has-started + .player_controls .volume_button {
+    display: unset;
+}
+
+.vjs-playing + .player_controls .play_button,
+.vjs-paused + .player_controls .pause_button,
+.vjs-controls-disabled + .player_controls,
+.player_controls .volume_button,
+.player_controls .skip_buttons {
+    display: none;
+}

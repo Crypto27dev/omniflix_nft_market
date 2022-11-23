@@ -1,0 +1,78 @@
+/* Breadcrumb CSS */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.breadcrumb .home_icon svg {
+    width: 15px;
+    height: auto;
+}
+
+.breadcrumb .slash {
+    margin: 0 8px;
+}
+
+.breadcrumb_collection,
+.home_icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.home_icon img {
+    width: 20px;
+}
+
+.breadcrumb_collection:hover:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+/*.home_icon:hover:after {*/
+/*    content: '';*/
+
+/*    width: 100%;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    bottom: -3px;*/
+
+/*    border-width: 0 0 1px;*/
+/*    border-style: solid;*/
+/*}*/
+
+.breadcrumb > div {
+    text-align: left;
+    word-break: break-word;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.breadcrumb > span {
+    color: #F2F2F2;
+}
+
+.breadcrumb > div .icon {
+    width: 20px;
+}
+
+.breadcrumb > div:first-child {
+    cursor: pointer;
+    margin-left: unset;
+}

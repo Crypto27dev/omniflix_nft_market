@@ -1,0 +1,23 @@
+.studio_v2 .text_field {
+    margin: unset;
+}
+
+.text_field > div {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #696969;
+    border-radius: unset;
+}
+
+.text_field input::placeholder {
+    opacity: 1;
+}
+
+.text_field input:focus::placeholder {
+    color: transparent;
+}
+
+.text_field textarea {
+    resize: vertical;
+}

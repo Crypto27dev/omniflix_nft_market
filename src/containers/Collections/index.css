@@ -1,0 +1,374 @@
+/* Activity && Offer Table CSS */
+.collection_table {
+    padding: 40px;
+    background: #131618;
+}
+
+.collection_table > div > table {
+    background: #1a1e21;
+    border-radius: 0 0 10px 10px;
+}
+
+.collection_table > div > div:first-child {
+    background: #1a1e21;
+    border-radius: 10px 10px 0 0;
+}
+
+.collection_table > div > div:first-child svg {
+    fill: #f2f2f2;
+}
+
+.collection_table > div > div:first-child div:before {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.collection_table > div > div:first-child div:after {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.collection_table > div > div:first-child input {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.collection_table > div {
+    background: transparent;
+    box-shadow: unset;
+}
+
+.collection_table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.collection_table table thead {
+    background: rgba(70, 70, 70, 0.5);
+}
+
+.collection_table table thead tr {
+    border-radius: 0;
+}
+
+.collection_table table thead tr th {
+    background: #46464680;
+    border-bottom: none;
+}
+
+.collection_table table thead tr th div {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.collection_table table thead tr th:first-child {
+    border-radius: 0;
+}
+
+.collection_table table thead tr th:last-child {
+    border-radius: 0;
+}
+
+.collection_table table thead tr th:nth-child(1) > span,
+.collection_table table thead tr th:nth-child(2) > span {
+    justify-content: flex-start;
+}
+
+.collection_table table tfoot tr td {
+    border-bottom: none;
+}
+
+.collection_table table thead tr th > span {
+    justify-content: center;
+}
+
+.collection_table table tbody tr {
+    border: 1px solid #22272B;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.collection_table table tbody tr:hover td {
+    background: #22272B;
+}
+
+.collection_table table tbody tr td .creator_address {
+    cursor: pointer;
+}
+
+.collection_table table tbody tr td {
+    border-bottom: none;
+    background: #23282c66;
+}
+
+.collection_table table tbody tr td div {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F2F2F2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection_table table tbody tr td:nth-child(2) div {
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.collection_table table tbody tr td .collection_icon,
+.collection_table table tbody tr td .collection_name {
+    cursor: pointer;
+}
+
+.collection_table table tbody tr td .collection_icon,
+.collection_table table tbody tr td .collection_name,
+.collection_table table tbody tr td .quantity,
+.collection_table table tbody tr td .from_value,
+.collection_table table tbody tr td .to_value,
+.collection_table table tbody tr td .time {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.collection_table table tbody tr td .token_amount,
+.collection_table table tbody tr td .quantity,
+.collection_table table tbody tr td .from_value,
+.collection_table table tbody tr td .to_value,
+.collection_table table tbody tr td .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection_table table tbody tr td .badge {
+    background: #3a3a3b;
+    border-radius: 50px;
+    padding: 5px 20px;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection_table table tbody tr td .from_value .hash_text,
+.collection_table table tbody tr td .to_value .hash_text {
+    max-width: 150px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #B7B7B7;
+}
+
+.collection_table table tbody tr td .matched_address {
+
+}
+
+.collection_table table tbody tr td .token_amount > span {
+    margin-left: 10px;
+}
+
+.collection_table table tbody tr td .item_value img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.collection_table table tbody tr td .positive_value {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #27AE60;
+}
+
+.collection_table table tbody tr td div.negative_value {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #EB5757;
+}
+
+.collection_table table tbody tr td .explore {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.collection_table table tbody tr td .action_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.collection_table table tbody tr td .cancel_button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 0;
+    color: unset;
+}
+
+.collection_table table tbody tr td .cancel_button > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.collection_table table tbody tr td .cancel_button:before {
+    content: '';
+    position: absolute;
+    background: #23282C;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.collection_table table tbody tr td .cancel_button:after {
+    content: '';
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -2;
+    border-radius: 50px;
+}
+
+.collection_table table tbody tr td .accept_button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 50px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: #000000;
+}
+
+.collection_table table tbody tr td .tx_hash.matched_address {
+    background: linear-gradient(91.79deg, rgba(250, 192, 30, 0.7) 3.15%, rgba(252, 118, 42, 0.7) 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.collection_table .collection_icon {
+    width: 100px;
+    height: 80px;
+    border-radius: 10px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.collection_table .collection_icon img {
+    width: 80px;
+    height: auto;
+}
+
+.collection_table .link_div svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.collection_table .created_date {
+    min-width: 150px;
+}
+
+.collection_table .circular_progress {
+    display: grid;
+}
+
+.collection_table .circular_progress > div {
+    display: block;
+}
+
+.collections_main .explore_header {
+    z-index: 101;
+}
+
+.collection_table .collection_icon .inline_video {
+    width: 100%;
+    height: 100%;
+}
+
+.explore_main.collections_main .listing_search {
+    margin-left: 10px;
+}
+
+@media (min-width: 1700px) {
+    .collection_table {
+        display: flex;
+        justify-content: center;
+    }
+
+    .collection_table > div {
+        position: relative;
+        margin: auto;
+        max-width: 1650px;
+        min-width: 1400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .explore_main.collections_main .listing_search {
+        display: unset;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .collection_table table tbody tr td:nth-child(2) div {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .explore_main.collections_main .listing_search {
+        width: 150px;
+    }
+
+    .collection_table {
+        padding: 20px;
+    }
+
+    .collection_table table thead tr th div {
+        font-size: 14px;
+    }
+
+    .collection_table table tbody tr td div {
+        font-size: 14px;
+    }
+}
+

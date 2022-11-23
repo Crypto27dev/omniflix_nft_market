@@ -1,0 +1,73 @@
+image: node:14.5.0-alpine
+
+stages:
+  - test
+  - deploy
+
+lint_test:
+  stage: test
+  only:
+    - development
+    - staging
+    - master
+    - frontier
+    - merge_requests
+  script:
+    - apk add g++ make python
+    - yarn
+    - $(pwd)/node_modules/.bin/eslint $(pwd)
+  cache:
+    paths:
+      - node_modules/
+
+dev_deploy:
+  stage: deploy
+  only:
+    - development
+  script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "${DEV_SSH_KEY}" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh -o "StrictHostKeyChecking=no" ${DEV_SSH_USER}@${DEV_SSH_SERVER} "mkdir -p /tmp/nucleus/front_end"
+    - scp -o "StrictHostKeyChecking=no" $(pwd)/scripts/dev_deploy.sh ${DEV_SSH_USER}@${DEV_SSH_SERVER}:/tmp/nucleus/front_end/dev_deploy.sh
+    - ssh -o "StrictHostKeyChecking=no" ${DEV_SSH_USER}@${DEV_SSH_SERVER} "bash /tmp/nucleus/front_end/dev_deploy.sh"
+
+staging_deploy:
+  stage: deploy
+  only:
+    - staging
+  script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "${STAGE_SSH_KEY}" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh -o "StrictHostKeyChecking=no" ${STAGE_SSH_USER}@${STAGE_SSH_SERVER} "mkdir -p /tmp/nucleus/front_end"
+    - scp -o "StrictHostKeyChecking=no" $(pwd)/scripts/staging_deploy.sh ${STAGE_SSH_USER}@${STAGE_SSH_SERVER}:/tmp/nucleus/front_end/staging_deploy.sh
+    - ssh -o "StrictHostKeyChecking=no" ${STAGE_SSH_USER}@${STAGE_SSH_SERVER} "bash /tmp/nucleus/front_end/staging_deploy.sh"
+
+prod_deploy:
+  stage: deploy
+  only:
+    - master
+  script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "${PROD_UI_SSH_KEY}" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh -o "StrictHostKeyChecking=no" ${PROD_UI_SSH_USER}@${PROD_UI_SSH_SERVER} "mkdir -p /tmp/nucleus/front_end"
+    - scp -o "StrictHostKeyChecking=no" $(pwd)/scripts/prod_deploy.sh ${PROD_UI_SSH_USER}@${PROD_UI_SSH_SERVER}:/tmp/nucleus/front_end/prod_deploy.sh
+    - ssh -o "StrictHostKeyChecking=no" ${PROD_UI_SSH_USER}@${PROD_UI_SSH_SERVER} "bash /tmp/nucleus/front_end/prod_deploy.sh"
+
+frontier_deploy:
+  stage: deploy
+  only:
+    - frontier
+  script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "${PROD_UI_SSH_KEY}" | tr -d '\r' | ssh-add - > /dev/null
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh -o "StrictHostKeyChecking=no" ${PROD_UI_SSH_USER}@${PROD_UI_SSH_SERVER} "mkdir -p /tmp/nucleus/front_end"
+    - scp -o "StrictHostKeyChecking=no" $(pwd)/scripts/frontier_deploy.sh ${PROD_UI_SSH_USER}@${PROD_UI_SSH_SERVER}:/tmp/nucleus/front_end/frontier_deploy.sh
+    - ssh -o "StrictHostKeyChecking=no" ${PROD_UI_SSH_USER}@${PROD_UI_SSH_SERVER} "bash /tmp/nucleus/front_end/frontier_deploy.sh"

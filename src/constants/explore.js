@@ -1,0 +1,2 @@
+export const ACTIVE_CARD_SET = 'ACTIVE_CARD_SET';
+export const ACTIVE_CARD_HIDE = 'ACTIVE_CARD_HIDE';

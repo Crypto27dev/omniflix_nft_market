@@ -1,0 +1,26 @@
+.place_bid_div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.purchase_card .place_bid_div .purchase_license {
+    margin: 0 0 10px 0;
+}
+
+.place_bid_div .counter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    font-feature-settings: 'zero' on;
+    color: #939393;
+}
+
+.place_bid_div .counter > span {
+    color: #FFFFFF;
+}
+
+.place_bid_tooltip {
+    width: 100%;
+}

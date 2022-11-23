@@ -1,0 +1,82 @@
+{
+  "name": "nucleus",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@gitlab.ctlabs.in:omniflix/nucleus/front_end.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@cosmjs/amino": "^0.26.0",
+    "@cosmjs/encoding": "^0.27.1",
+    "@cosmjs/proto-signing": "^0.26.5",
+    "@cosmjs/stargate": "^0.26.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@mui/icons-material": "^5.0.3",
+    "@mui/lab": "^5.0.0-alpha.90",
+    "@mui/material": "^5.0.3",
+    "@mui/styles": "^5.0.1",
+    "@mui/x-date-pickers": "^5.0.0-beta.1",
+    "@walletconnect/client": "^1.8.0",
+    "@walletconnect/utils": "^1.8.0",
+    "axios": "^0.21.4",
+    "canvas-confetti": "^1.5.1",
+    "classnames": "^2.3.1",
+    "cosmjs-types": "^0.4.1",
+    "date-fns": "^2.28.0",
+    "file-saver": "^2.0.5",
+    "history": "^5.0.0",
+    "long": "^5.2.0",
+    "moment": "^2.29.1",
+    "mui-datatables": "^3.7.8",
+    "prop-types": "^15.7.2",
+    "qrcode.react": "^3.1.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-otp-input": "^2.4.0",
+    "react-redux": "^7.2.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.0",
+    "react-select": "^5.2.1",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "serve": "^13.0.2",
+    "symbol-observable": "^4.0.0",
+    "typescript": "^4.5.5",
+    "video.js": "^7.17.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

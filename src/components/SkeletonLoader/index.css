@@ -1,0 +1,38 @@
+body .skeleton_loader {
+    background: #46464680;
+    /*background: rgb(0 0 0 / 40%);*/
+}
+
+body .skeleton_loader:after {
+    background: linear-gradient(90deg, transparent, #79797930, transparent);
+    /*background: linear-gradient(90deg, transparent, rgb(0 0 0 / 80%), transparent);*/
+}
+
+.profile_skeleton .skeleton_loader {
+    border-radius: 50px;
+    transform: unset;
+}
+
+.collection_list .list_page.collection_skeleton_loader .row {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.collection_table .collection_icon.skeleton_loader {
+    border-radius: 0;
+}
+
+.ibc_tokens_table .skeleton_loader {
+    margin: auto;
+}
+
+.ibc_tokens_table .token_value .skeleton_loader {
+    margin: 0;
+}
+
+.token_value .collection_icon.skeleton_loader {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 50px;
+}

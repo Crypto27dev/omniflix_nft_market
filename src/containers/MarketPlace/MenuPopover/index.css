@@ -1,0 +1,32 @@
+.menu_popover > div:nth-child(3) {
+    background: #23282C;
+    border: 1px solid #22272B;
+    border-radius: 10px;
+}
+
+.menu_popover .menu_list {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu_popover .menu_list button {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.005em;
+    color: #969696;
+    border-bottom: 1px solid #3E5364;
+    border-radius: 0;
+    padding: 12px 10px;
+    width: 100%;
+    text-transform: capitalize;
+}
+
+.menu_popover .menu_list button:last-child {
+    border: none;
+}

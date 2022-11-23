@@ -1,0 +1,71 @@
+.ff_studio .copy_button,
+.quick_view_data .copy_button {
+    border: 1px solid #FAC01E;
+    border-radius: 3px;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 16px;
+    line-height: 154.41%;
+    color: #FAC01E;
+    background: transparent;
+    margin-left: 10px;
+}
+
+.ff_studio .copy_button:hover,
+.quick_view_data .copy_button:hover,
+.copy_button.copy_icon_button:hover {
+    background: transparent;
+}
+
+.copy_button.copy_icon_button {
+    border: unset;
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    color: #ffffff;
+    background: transparent;
+}
+
+.copy_button.copy_icon_button svg {
+    width: 20px;
+    fill: #ffffff;
+}
+
+.copy_info {
+    display: flex;
+    align-items: center;
+    background: #141414;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.copy_info > p {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #E7E7E7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.copy_info .copy_button {
+    margin-left: 4px;
+}
+
+.copy_info .copy_button img {
+    width: 20px;
+}
+
+@media (max-width: 425px) {
+    .copy_button.copy_icon_button {
+        min-width: 24px;
+        min-height: 24px;
+        width: 24px;
+        height: 24px;
+        padding: 4px;
+    }
+}

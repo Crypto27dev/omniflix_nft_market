@@ -1,0 +1,68 @@
+.min_bid_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.min_bid_section > .row {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.listing_dialog .bid_field .text_field {
+    margin: 15px 0 25px;
+    width: 100%;
+}
+
+.listing_dialog .bid_field .text_field p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #B7B7B7;
+}
+
+.listing_dialog .min_bid_section .select_field_parent {
+    width: 50%;
+    margin-right: 0;
+}
+
+.listing_dialog .min_bid_section .row:first-child .text_field > div {
+    border-radius: 0 5px 5px 0;
+}
+
+.min_bid_section .select_field .select__control > div {
+    border-radius: 0;
+}
+
+.listing_dialog .white_list_content {
+    margin: 20px 0 10px 0;
+}
+
+.listing_dialog .white_list_field {
+    width: 100%;
+}
+
+.listing_dialog .white_list_field.text_field > div {
+    height: auto;
+    padding: 0;
+}
+
+@media (max-width: 425px) {
+    .listing_dialog .min_bid_section .select_field_parent {
+        width: 100%;
+    }
+
+    .min_bid_section,
+    .listing_dialog .date_section {
+        flex-direction: column;
+    }
+
+    .min_bid_section > .row,
+    .listing_dialog .date_section .row {
+        width: 100%;
+    }
+}

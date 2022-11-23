@@ -1,0 +1,215 @@
+.single_asset {
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.single_asset.scroll_bar {
+    overflow: hidden;
+}
+
+.single_asset_image {
+    width: 48%;
+    padding: 30px 0 30px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.single_asset_image > img {
+    width: 100%;
+}
+
+.single_asset .video_content,
+.active_asset_image {
+    width: 100%;
+    height: auto;
+}
+
+.single_asset > div:first-child {
+    padding-left: 30px;
+}
+
+.single_asset_details {
+    width: 50%;
+    padding: 40px;
+    transition: box-shadow 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    height: calc(100vh - 80px);
+    margin: unset;
+    background: rgba(33, 38, 43, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-left: 1px solid #2F363D;
+}
+
+.single_asset_details .section4_row1 .section4_row1_nft > div,
+.single_asset_details .section4_row1 > span {
+    cursor: unset;
+}
+
+.single_asset_details .section4_row1 > span:hover {
+    text-decoration: unset;
+}
+
+.single_asset_details .section4_row1 .section4_row1_nft > div:hover:after {
+    display: none;
+}
+
+.single_asset_details .transfer_sell,
+.single_asset_details .purchase_card,
+.single_asset_details .delist {
+    width: 50%;
+}
+
+.single_asset .pdf_section_asset {
+    width: 48%;
+    padding: 30px 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.single_asset .pdf_section_asset .pdf_view {
+    width: 100%;
+    height: 100%;
+}
+
+.single_asset .active_asset_image > img,
+.single_asset .active_asset_image .default_thumbnail > img {
+    max-width: 100%;
+    max-height: calc(100vh - 80px);
+    height: auto;
+    width: auto;
+}
+
+@media (min-width: 1450px) {
+    .single_asset .pdf_section_asset {
+        margin-right: 30px;
+        width: 100%;
+    }
+
+    .single_asset_details .transfer_sell,
+    .single_asset_details .purchase_card,
+    .single_asset_details .delist {
+        width: 830px;
+        flex-shrink: 0;
+    }
+
+    .single_asset_details {
+        width: 830px;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .single_asset {
+        flex-direction: column;
+    }
+
+    .single_asset > div:first-child {
+        width: 100%;
+        padding: 20px 40px;
+        height: auto;
+        min-height: auto;
+    }
+
+    .single_asset .video_content,
+    .active_asset_image {
+        height: 100%;
+    }
+
+    .single_asset .active_asset_image > img,
+    .single_asset .active_asset_image .default_thumbnail > img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .single_asset_details {
+        width: 100%;
+        overflow: unset;
+        height: auto;
+    }
+
+    .single_asset_details .transfer_sell,
+    .single_asset_details .purchase_card,
+    .single_asset_details .delist {
+        width: 100%;
+        padding: 10px 40px;
+        margin: unset;
+    }
+
+    .single_asset_details .transfer_sell > button,
+    .single_asset_details .purchase_card .purchase_license,
+    .single_asset_details .delist .delist_section > button {
+        margin: unset;
+        padding: 10px;
+        height: auto;
+    }
+
+    .single_asset_details .more_info {
+        margin-bottom: 50px;
+    }
+
+    .single_asset.scroll_bar {
+        overflow-y: auto;
+        height: calc(100vh - 80px);
+    }
+}
+
+@media (max-width: 425px) {
+    .single_asset > div:first-child {
+        padding: 20px;
+        min-height: auto;
+        height: auto;
+    }
+
+    .single_asset_details {
+        padding: 20px;
+    }
+
+    .single_asset_details .more_info {
+        margin-bottom: 80px;
+    }
+
+    .single_asset_details .transfer_sell,
+    .single_asset_details .purchase_card,
+    .single_asset_details .delist {
+        padding: 10px 20px;
+    }
+
+    .section4_row1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .single_asset_details .section4_row1 .section4_row1_nft {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .single_asset_details .section4_row1 .section4_row1_nft > div {
+        max-width: 50%;
+    }
+
+    .single_asset_details .section4_row1 > span {
+        width: 100%;
+    }
+
+    .single_asset_details .delist .delist_section1 .price_text {
+        font-size: 14px;
+    }
+
+    .single_asset_details .delist .delist_section1 .lsr_value {
+        font-size: 16px;
+    }
+
+    .single_asset_details .delist .delist_section > button {
+        font-size: 16px;
+        padding: 14px 10px;
+    }
+
+    .single_asset > div:first-child {
+        min-height: auto;
+    }
+}

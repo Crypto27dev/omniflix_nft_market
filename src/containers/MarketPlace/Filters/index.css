@@ -1,0 +1,247 @@
+.filters {
+    display: none;
+    width: 380px;
+    height: calc(100vh - 80px);
+    padding: 30px 20px;
+    background: rgba(35, 40, 44, 0.4);
+    border: 1px solid #22272B;
+}
+
+.filters.show {
+    display: block;
+}
+
+.filters .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 0 17px 20px;
+}
+
+.filters .heading > p {
+    background: linear-gradient(
+            91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.005em;
+}
+
+.filters .accordion {
+    margin-top: 30px;
+}
+
+.accordion .details {
+    max-height: 340px;
+    overflow: auto;
+}
+
+.accordion.selectable_chips .details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.accordion.selectable_chips .details > span {
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding: 5px 10px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    color: #BDBDBD;
+    margin: 4px 4px 4px 0;
+    cursor: pointer;
+}
+
+.accordion.selectable_chips .details > span.active {
+    background: linear-gradient(
+            91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    color: #000;
+}
+
+.accordion .text_field.search_field {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.accordion .search_field input::placeholder {
+    color: #3F5A6F;
+}
+
+.accordion .search_field > div {
+    background: #23282c66;
+    border: 1px solid #22272B;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.accordion .search_field .icon {
+    width: 20px;
+}
+
+.accordion .checkbox {
+    width: 100%;
+    font-family: 'Sarabun', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.005em;
+    color: #969696;
+    margin: unset;
+}
+
+.accordion .checkbox > span:nth-child(2) {
+    margin-left: 7px;
+}
+
+.accordion .checkbox.checked svg {
+    fill: url(#paint0_linear);
+}
+
+.search_field input:-webkit-autofill,
+.search_field input:-webkit-autofill:hover,
+.search_field input:-webkit-autofill:focus,
+.search_field textarea:-webkit-autofill,
+.search_field textarea:-webkit-autofill:hover,
+.search_field textarea:-webkit-autofill:focus,
+.search_field select:-webkit-autofill,
+.search_field select:-webkit-autofill:hover,
+.search_field select:-webkit-autofill:focus {
+    border-radius: inherit;
+}
+
+/*Status*/
+.accordion.status .details,
+.accordion.types .details {
+    justify-content: space-between;
+}
+
+.accordion.status .details > span {
+    width: 49%;
+    margin: 4px 0;
+    text-transform: uppercase;
+}
+
+/*Price Range*/
+.accordion.price_range .select_field {
+    margin-bottom: 20px;
+}
+
+.accordion.price_range .range_slider {
+    width: 90%;
+    margin: auto;
+}
+
+.price_range .range_slider > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border: unset;
+}
+
+.price_range .text_field_range {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.price_range .text_field_range > p {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0 17px;
+    background: linear-gradient(
+            270deg, #305672 0%, #3F5A6F 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accordion.price_range .text_field_range .text_field input {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    padding: 5px 10px;
+    color: #3f5a6f;
+}
+
+.accordion.price_range .select_field .select__menu > div {
+    height: 120px;
+    overflow-x: auto;
+}
+
+/*Types*/
+.accordion.types .details > span {
+    width: 49%;
+    margin: 4px 0;
+}
+
+.accordion.types .count {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.005em;
+    text-align: center;
+    color: #3F5A6F;
+    margin-left: 6px;
+}
+
+/* Sort by */
+.sort_by > div:nth-child(3) {
+    width: 200px;
+    background: #21262B;
+    border-radius: 5px;
+}
+
+.sort_by .tab {
+    background: #21262B;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #5a5757;
+}
+
+.sort_by .tab:last-child {
+    border-bottom: 0;
+}
+
+.sort_by .tab button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #F2F2F2;
+    text-align: left;
+    height: 44px;
+    padding: 0 20px;
+    text-transform: capitalize;
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filters > .search_field {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .filters > .search_field {
+        width: 100%;
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 425px) {
+    .filters {
+        width: 100%;
+    }
+}

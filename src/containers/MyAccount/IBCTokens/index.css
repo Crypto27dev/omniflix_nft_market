@@ -1,0 +1,468 @@
+.activity_table .token_value {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.activity_table .token_value img {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.activity_table .token_value > svg {
+    fill: #EB5757;
+    margin-left: 20px;
+    width: 24px;
+}
+
+.activity_table .amount_value {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #27AE60;
+}
+
+.activity_table .deposite_value {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 50px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    padding: 8px 40px;
+}
+
+.activity_table .deposite_value span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activity_table.ibc_tokens_table table thead th {
+    text-align: center;
+}
+
+.activity_table.ibc_tokens_table table tbody tr td div {
+    text-align: center;
+}
+
+.activity_table.ibc_tokens_table div table thead tr th > span {
+    justify-content: center;
+}
+
+.activity_table.ibc_tokens_table div table thead tr th:nth-child(1) > span {
+    justify-content: flex-start;
+}
+
+.activity_table.ibc_tokens_table > div {
+    width: 100%;
+}
+
+.activity_table.ibc_tokens_table div table tfoot tr td div > div > div > div > svg {
+    fill: #b7b7b778;
+}
+
+.activity_table.ibc_tokens_table div table tfoot tr td div > div > div > div button:disabled svg {
+    fill: #b7b7b778;
+}
+
+/* deposite Dialog */
+.deposite_dialog > div:nth-child(3) > div {
+    background: rgb(24 27 31);
+    border-radius: 20px;
+    padding: 40px;
+    width: 550px;
+}
+
+.deposite_dialog .deposite_dialog_content > h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+}
+
+.deposite_dialog .deposite_section1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.deposite_dialog .deposite_section1 > span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.deposite_dialog .ibc_transfer_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deposite_dialog .ibc_transfer_section > div {
+    background: rgba(33, 37, 42, 0.5);
+    border: 1px solid #292929;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 200px;
+    text-align: left;
+    padding: 5px 10px;
+}
+
+.deposite_dialog .ibc_transfer_section > div > span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #828282;
+}
+
+.deposite_dialog .ibc_transfer_section > div .hash_text {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    max-width: 160px;
+}
+
+.deposite_dialog .deposite_section2 {
+    margin-top: 50px;
+}
+
+.deposite_dialog .deposite_section2 .deposite_section2_header {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deposite_dialog .deposite_section2 .deposite_section2_header .balance {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1DA1F2;
+}
+
+.deposite_dialog .deposite_section2 .amount_field {
+    width: 100%;
+}
+
+.deposite_dialog .deposite_section2 .amount_field > div > div:nth-child(1) {
+    margin: 0;
+}
+
+.deposite_dialog .deposite_section2 .amount_field .token_start {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+.deposite_dialog .deposite_section2 .amount_field .amount_end {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+.deposite_dialog .deposite_section2 .amount_field input {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.deposite_dialog .deposite_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 12px 20px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.deposite_dialog .deposite_button:disabled,
+.activity_table .deposite_value:disabled {
+    opacity: 0.5;
+}
+
+.deposite_dialog .deposite_button > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* confirm_ibc_dialog */
+.confirm_ibc_dialog > h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #E7E7E7;
+    margin: 20px 0 10px 0;
+}
+
+.confirm_ibc_dialog > div .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.confirm_ibc_dialog > div .row .label {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B7B7B7;
+}
+
+.confirm_ibc_dialog > div .row .value {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+}
+
+.confirm_ibc_dialog > div .row .token_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.confirm_ibc_dialog > div .row .token_info img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.confirm_ibc_dialog > div .row .hash_text.address {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+    max-width: 200px;
+}
+
+
+.confirm_ibc_dialog .confirm_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.confirm_ibc_dialog .confirm_actions > button {
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    /*background: #1B1B1B;*/
+    width: 49%;
+    height: 40px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.deposite_dialog > div:nth-child(3) > div .ledger_note.warning {
+    color: red;
+    margin: 40px 0;
+}
+
+.deposite_dialog .cancel_button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    text-transform: capitalize;
+}
+
+.deposite_dialog .cancel_button > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.deposite_dialog .cancel_button:before {
+    content: '';
+    position: absolute;
+    background: #202429;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.deposite_dialog .cancel_button:after {
+    content: '';
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -2;
+    border-radius: 5px;
+}
+
+.deposite_dialog > div:nth-child(3) > div .ledger_note {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #B7B7B7;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+
+.deposite_dialog > div:nth-child(3) > div .wallet_connect_note {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    color: #B7B7B7;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .activity_table.ibc_tokens_table table tbody tr td div {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .deposite_dialog > div:nth-child(3) > div {
+        padding: 20px;
+    }
+
+    .deposite_dialog .ibc_transfer_section {
+        flex-direction: column;
+    }
+
+    .deposite_dialog .ibc_transfer_section > div {
+        width: 100%;
+    }
+
+    .deposite_dialog .ibc_transfer_section > img {
+        margin: 10px 0;
+    }
+
+    .deposite_dialog .ibc_transfer_section > div .hash_text {
+        font-size: 14px;
+    }
+
+    .deposite_dialog .deposite_section2 .deposite_section2_header {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .deposite_dialog .deposite_section2 .deposite_section2_header .balance {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+
+    .activity_table .token_value {
+        font-size: 14px;
+    }
+
+    .activity_table .amount_value {
+        font-size: 14px;
+    }
+
+    .activity_table .token_value img {
+        width: 18px;
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .activity_table .deposite_value {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .deposite_dialog .deposite_dialog_content > h2 {
+        font-size: 20px;
+    }
+
+    .deposite_dialog .deposite_section1 > span {
+        font-size: 16px;
+    }
+
+    .deposite_dialog .ibc_transfer_section > div > span {
+        font-size: 14px;
+    }
+
+    .deposite_dialog .deposite_section2 .amount_field .token_start {
+        font-size: 14px;
+    }
+
+    .deposite_dialog .deposite_section2 .amount_field .token_start_icon {
+        width: 20px;
+    }
+
+    .deposite_dialog .deposite_button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}

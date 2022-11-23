@@ -1,0 +1,36 @@
+.pdf_section_asset.skeleton_loader {
+    height: calc(100% - 20px);
+    margin: 10px;
+}
+
+.card_skeleton .list_section1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.card_skeleton .list_section1 .skeleton_loader {
+    transform: unset;
+    padding: 0;
+}
+
+.card_skeleton .list_section1_left .skeleton_loader:first-child {
+    border-radius: 20px;
+}
+
+.card_skeleton .list_section1_right .skeleton_loader:first-child {
+    margin-right: 5px;
+}
+
+.card_skeleton .list_section3 {
+    margin-bottom: 5px;
+}
+
+.card_skeleton .section4_row2 .skeleton_loader {
+    transform: unset;
+}
+
+.card_skeleton .more_info .skeleton_loader,
+.more_info .skeleton_loader {
+    transform: unset;
+    border-radius: 0;
+}

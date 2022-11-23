@@ -1,0 +1,639 @@
+.transfer_sell {
+    background: rgba(33, 38, 43, 0.8);
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 20px 40px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.transfer_sell > button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    width: 48%;
+    padding: 12px;
+    text-transform: capitalize;
+}
+
+.transfer_sell .transfer_button > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.transfer_sell .transfer_button:before {
+    content: '';
+    position: absolute;
+    background: #202429;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.transfer_sell .transfer_button:after {
+    content: '';
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -2;
+    border-radius: 5px;
+}
+
+.transfer_sell .sell_button {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+}
+
+.transfer_sell .sell_button > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.transfer_dialog > div:nth-child(3) > div {
+    position: relative;
+    width: 630px;
+    min-height: 500px;
+
+    background: rgb(24 27 31);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transfer_dialog_content {
+    width: 100%;
+}
+
+.transfer_dialog_data > h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.transfer_dialog_data .transfer_action {
+    margin-top: 60px;
+}
+
+.transfer_dialog_data .text_field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.transfer_dialog_data .text_field > div {
+    width: 500px;
+}
+
+.transfer_dialog_content .transfer_dialog_data .text_field > p {
+    width: 500px;
+    margin-left: 30px;
+}
+
+.transfer_action > button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    width: 230px;
+    padding: 12px;
+    text-transform: capitalize;;
+}
+
+.transfer_action .transfer_cancel > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dialog .transfer_action .transfer_cancel:before {
+    content: '';
+    position: absolute;
+    background: #202429;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.dialog .transfer_action .transfer_cancel:after {
+    content: '';
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -2;
+    border-radius: 5px;
+}
+
+.transfer_action .transfer_confirm {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    margin-left: 20px;
+}
+
+.transfer_action .transfer_confirm:disabled {
+    opacity: 0.5;
+}
+
+.transfer_action .transfer_confirm > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* success dialog */
+.transfer_dialog_data.success_dialog img {
+    margin-top: -50px;
+}
+
+.transfer_dialog_data.success_dialog > h2 {
+    margin: 30px 0;
+}
+
+.transfer_dialog_data.success_dialog > span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.transfer_dialog_data .tx_hash {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #696969;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.transfer_dialog_data .tx_hash > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.transfer_dialog_data .tx_hash > div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.transfer_dialog_data.success_dialog > button {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    padding: 12px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.transfer_dialog_data.success_dialog button > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Sell Dialog */
+.sell_dialog > div:nth-child(3) > div {
+    position: relative;
+    width: 630px;
+    height: 446px;
+
+    background: rgb(24 27 31);
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sell_dialog .listing_type,
+.sell_dialog .listing_price {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.sell_dialog .choose_price {
+    display: flex;
+    align-items: center;
+}
+
+/* Select Field TOKen */
+.select_field_parent .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.select_field_parent .label > img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.select_field_parent .label svg {
+    margin-right: 15px;
+}
+
+.select_field_parent .label:hover {
+    background: none;
+}
+
+.sell_dialog .select_field .select__value-container {
+    padding: 0 12px;
+    height: 50px;
+}
+
+.sell_dialog .text_field > div:hover fieldset {
+    border: 1px solid #3F5A6F;
+}
+
+.sell_dialog .select_field .select__placeholder {
+    font-size: 17px;
+}
+
+/* success dialog Sell */
+.success_dialog_content.success_dialog {
+    width: 100%;
+}
+
+.success_dialog_content.success_dialog > img {
+    margin-bottom: 20px;
+}
+
+.success_dialog_content.success_dialog .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 0;
+    background: #0E151B;
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.success_dialog_content.success_dialog .card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.success_dialog_content.success_dialog > h2 {
+    margin: 30px 0;
+}
+
+.success_dialog_content.success_dialog > span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.success_dialog_content .tx_hash {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #696969;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.success_dialog_content .tx_hash > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.success_dialog_content .tx_hash > div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.success_dialog_content.success_dialog > button {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    padding: 12px;
+    text-transform: capitalize;
+    margin-top: 50px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.success_dialog_content.success_dialog .transfer_confirm > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Transfer */
+.dialog > div:nth-child(3) > div {
+    max-width: 800px;
+    width: 100%;
+    margin: unset;
+    border-radius: 10px;
+}
+
+.confirm_transfer_dialog_content h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+}
+
+.dialog .confirm_transfer_dialog_content {
+    padding: 40px;
+}
+
+.confirm_transfer_dialog_content .row1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.confirm_transfer_dialog_content .left_section {
+    background: #1B1B1B;
+    border: 1px solid #212121;
+    box-sizing: border-box;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.confirm_transfer_dialog_content .left_section img,
+.confirm_transfer_dialog_content .left_section > p {
+    width: 250px;
+}
+
+.confirm_transfer_dialog_content .left_section > p {
+    height: 150px;
+    background: #d7d7d7;
+    border-radius: 10px;
+}
+
+.confirm_transfer_dialog_content .left_section > .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.confirm_transfer_dialog_content .left_section > .row > span {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B7B7B7;
+}
+
+.confirm_transfer_dialog_content .left_section > .row > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.confirm_transfer_dialog_content .right_section .row .url_css {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8F67FF;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+
+.confirm_transfer_dialog_content .right_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1 1;
+    margin-left: 20px;
+}
+
+.confirm_transfer_dialog_content .right_section .row {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.confirm_transfer_dialog_content .right_section .row > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+}
+
+.confirm_transfer_dialog_content .right_section .row .hash_text.address {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+    max-width: 200px;
+}
+
+.confirm_transfer_dialog_content .confirm_action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.confirm_transfer_dialog_content .confirm_action > button {
+    color: #FFFFFF;
+    width: 49%;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.confirm_transfer_dialog_content .confirm_action .primary_button {
+    background: linear-gradient(90deg, #D61D6A 0%, #7645FF 100%);
+}
+
+@media (max-width: 768px) {
+    .transfer_sell,
+    .transfer_dialog_data .text_field > div {
+        width: 100%;
+    }
+
+    .dialog > div:nth-child(3) > div {
+        max-width: 90%;
+        width: 90%;
+        min-width: 90%;
+    }
+
+    .confirm_transfer_dialog_content .row1 {
+        flex-direction: column;
+    }
+
+    .confirm_transfer_dialog_content .right_section {
+        margin: unset;
+    }
+
+    .transfer_dialog_content .success_dialog {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .transfer_dialog > div:nth-child(3) > div {
+        padding: 20px;
+        height: 90%;
+        overflow: unset;
+    }
+
+    .dialog .confirm_transfer_dialog_content {
+        padding: 0;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .ledger_note {
+        margin-bottom: 20px;
+    }
+
+    .confirm_transfer_dialog_content .right_section .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transfer_dialog_content {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .transfer_dialog_data .transfer_action {
+        flex-wrap: wrap;
+    }
+
+    .transfer_action > button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .transfer_action .transfer_confirm {
+        margin: 20px 0 0;
+    }
+
+    .success_dialog_content.success_dialog .card {
+        flex-direction: column;
+    }
+
+    .confirm_transfer_dialog_content .confirm_action {
+        flex-wrap: wrap;
+    }
+
+    .confirm_transfer_dialog_content .confirm_action > button {
+        width: 100%;
+    }
+
+    .transfer_sell > button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .transfer_dialog_data > h2 {
+        font-size: 24px;
+    }
+
+    .text_field > div {
+        font-size: 16px;
+    }
+}

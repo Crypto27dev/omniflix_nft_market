@@ -1,0 +1,22 @@
+export const FILTERS_SHOW = 'FILTERS_SHOW';
+export const FILTERS_HIDE = 'FILTERS_HIDE';
+
+export const STATUS_SET = 'STATUS_SET';
+
+export const PRICE_RANGE_SET = 'PRICE_RANGE_SET';
+export const PRICE_RANGE_COIN_SET = 'PRICE_RANGE_COIN_SET';
+
+export const GENRE_SET = 'GENRE_SET';
+export const GENRE_SEARCH_SET = 'GENRE_SEARCH_SET';
+
+export const COLLECTIONS_SET = 'COLLECTIONS_SET';
+export const COLLECTIONS_SEARCH_SET = 'COLLECTIONS_SEARCH_SET';
+
+export const CHAINS_SET = 'CHAINS_SET';
+export const CHAINS_SEARCH_SET = 'CHAINS_SEARCH_SET';
+
+export const ON_SALE_IN_SET = 'ON_SALE_IN_SET';
+export const ON_SALE_IN_SEARCH_SET = 'ON_SALE_IN_SEARCH_SET';
+
+export const TYPES_SET = 'TYPES_SET';
+export const TYPES_SEARCH_SET = 'TYPES_SEARCH_SET';

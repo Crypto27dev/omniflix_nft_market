@@ -1,0 +1,369 @@
+.activity_table .activities_list {
+    margin-top: 30px;
+}
+
+.activity_section {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.activity_section .calendar_date {
+    width: 100%;
+    height: inherit;
+    background: none;
+    position: absolute;
+    top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar_date img {
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.activity_timeline {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity_timeline > div {
+    height: 40px;
+    width: 1px;
+    background: linear-gradient(270deg, #305672 0%, #3F5A6F 100%);
+}
+
+.activity_timeline .created_at {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #B7B7B7;
+    padding: 10px 0;
+}
+
+.activity_section .activity_card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background: rgba(35, 40, 44, 0.3);
+    flex: 1;
+    border-radius: 10px;
+    width: 90%;
+    position: relative;
+    z-index: 0;
+}
+
+.activity_section .activity_card:before {
+    content: '';
+    position: absolute;
+    background: rgb(20 22 24);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.activity_section .activity_card:after {
+    content: '';
+    background: linear-gradient(270deg, #305672 0%, #3F5A6F 100%);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -2;
+    border-radius: 10px;
+}
+
+.activity_section .activity_card .card_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+}
+
+.activity_section .activity_card .card_section1 > .name {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.activity_section .activity_card .card_section1 .transfer {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.activity_section .activity_card .card_section1 .transfer .hash_text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    margin-left: 5px;
+    max-width: 150px;
+}
+
+.activity_section .activity_card .card_section1 .action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.activity_section .activity_card .card_section1 .action div {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.activity_section .activity_card .card_section1 .action div img {
+    margin-right: 5px;
+    width: 15px;
+}
+
+.activity_section .activity_card .card_section1 .action > svg {
+    width: 14px;
+    height: 14px;
+    margin: 0 10px;
+    fill: #67769A;
+}
+
+.activity_section .activity_card .card_section2 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.activity_section .activity_card .card_section2 .address_section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.activity_section .activity_card .card_section2 .address_section > div {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.activity_section .activity_card .card_section2 .address_section .hash_text {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+
+.activity_section .activity_card .card_section2 .nft_collection {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.activity_section .activity_card .card_section2 .nft_collection > p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    margin-top: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: -1px;
+    text-align: left;
+    width: 80%;
+}
+
+.card_section3 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card_section3 .txn_hash {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-feature-settings: 'zero' on;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.card_section3 .txn_hash p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-right: -1px;
+}
+
+.card_actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+.card_actions img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.card_actions svg {
+    fill: #27AE60;
+    width: 16px;
+}
+
+@media (max-width: 768px) {
+    .activity_section .activity_card {
+        flex-wrap: wrap;
+    }
+
+    .activity_section .activity_card .card_section1,
+    .activity_section .activity_card .card_section2 {
+        width: 50%;
+    }
+
+    .activity_section .activity_card .card_section3 {
+        width: 80%;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .activity_timeline > div {
+        height: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .activity_timeline > div {
+        display: none;
+    }
+
+    .activity_section {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .activity_timeline {
+        width: max-content;
+    }
+
+    .activity_section .activity_card {
+        width: 100%;
+    }
+
+    .activity_section .activity_card .card_section1,
+    .activity_section .activity_card .card_section2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .activity_section .activity_card .card_section1 {
+        margin-bottom: 20px;
+    }
+
+    .activity_section .activity_card .card_section3 {
+        margin-top: 20px;
+    }
+
+    .activity_section .activity_card .card_section1 > .name,
+    .activity_section .activity_card .card_section2 .nft_collection,
+    .activity_section .activity_card .card_section2 .nft_collection > p {
+        width: max-content;
+    }
+
+    .activity_section .activity_card .card_section2 .nft_collection {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .activity_section .activity_card .card_section2 .nft_collection > p {
+        margin: unset;
+    }
+}

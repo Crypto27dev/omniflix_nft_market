@@ -1,0 +1,184 @@
+.select_field {
+    width: 100%;
+}
+
+.select_field label {
+    color: #F2F2F2;
+    text-transform: capitalize;
+}
+
+.select_field label + div:before,
+.select_field label + div:after {
+    border-bottom: none;
+}
+
+.select_field fieldset,
+.select_field > div:hover fieldset,
+div[role='presentation'] .select_field > div:hover fieldset {
+    border: none;
+}
+
+.select_field input {
+    color: #F2F2F2;
+}
+
+.select_field .select__control > div {
+    color: #F2F2F2;
+    background: #141414;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    height: 50px;
+    border-radius: 0 5px 5px 0;
+}
+
+.select_field > div > div {
+    color: #F2F2F2;
+    background: #141414;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.select_field .select__control {
+    background: #141414;
+    border: 2px solid #141414;
+    box-shadow: unset;
+}
+
+.select_field .select__control:hover {
+    border: 2px solid #141414;
+}
+
+.select_field .select__value-container {
+    padding: 12px 20px;
+}
+
+.select_field .select__indicator-separator,
+.select_field .select__control--menu-is-open svg {
+    display: none;
+}
+
+.select_field .select__indicator svg {
+    fill: #696969;
+}
+
+.select_field .select__placeholder,
+.select_field .select__single-value {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #696969;
+    margin: unset;
+}
+
+.select_field input {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px !important;
+    line-height: 23px;
+    color: #696969 !important;
+}
+
+/* options menu */
+.select_field .select__menu {
+    margin: unset;
+}
+
+.select_field .select__menu > div {
+    max-height: 600px;
+}
+
+.select_field .select__menu-list {
+    padding: unset;
+}
+
+.select_field .select__option,
+.select_field .select__menu-notice--no-options {
+    background: #141414 !important;
+    padding: 14px 22px;
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #b7b7b780;
+    position: relative;
+}
+
+.select_field .select__menu-notice--no-options {
+    color: #ffffff;
+}
+
+.select_field .select__option:hover,
+.select_field .select__option--is-selected,
+.select_field .select__option--is-focused {
+    background: #1B1B1B !important;
+    color: #E7E7E7;
+}
+
+.select_field .label {
+    display: flex;
+    align-items: center;
+}
+
+.select_field .label > .icon {
+    width: 20px;
+    margin-right: 17px;
+    fill: #b7b7b780;
+}
+
+.select_field .label > svg {
+    width: 30px;
+    margin-right: 17px;
+}
+
+.select_field .select__option:hover .label > .icon,
+.select_field .select__option--is-selected .label > .icon,
+.select_field .select__option--is-focused .label > .icon {
+    fill: #B7B7B7;
+}
+
+.select_field_parent .error {
+    width: 100%;
+    bottom: -20px;
+    position: absolute;
+    left: 0;
+    text-align: left;
+    color: #f44336;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-size: 0.75rem;
+    margin-top: 3px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+}
+
+.select_field .select__control--is-focused .select__placeholder {
+    color: transparent;
+}
+
+.select_field .select__control.select__control--is-focused {
+    border: 2px solid;
+    border-image-source: linear-gradient(90deg, #D61D6A 0%, #7645FF 100%);
+    border-image-slice: 1;
+}
+
+.select_field .create_div {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #E7E7E7;
+    z-index: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.select_field .create_div .add_icon {
+    display: unset;
+    width: 24px;
+    fill: url(#paint0_linear);
+}

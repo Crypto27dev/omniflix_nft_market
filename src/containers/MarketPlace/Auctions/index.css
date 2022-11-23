@@ -1,0 +1,74 @@
+.auctions_list .list_section4 > div .lsr_value {
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    font-feature-settings: 'zero' on;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.auctions_list .list_section4 > div .lsr_value img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.auctions_list .list_section4 .list_section4_left > span:first-child {
+    text-align: right;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.auctions_list .list_section1_right > div {
+    background: none;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'zero' on;
+    color: #1EC063;
+    width: 100%;
+    backdrop-filter: unset;
+    flex-shrink: 0;
+}
+
+.auctions_list .list_section1_right > div svg {
+    margin-right: 2px;
+    fill: #1EC063;
+    flex-shrink: 0;
+}
+
+.auctions_list .list_section1_right .list_section4_right {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    font-feature-settings: 'zero' on;
+    color: #EB5757;
+}
+
+.auctions_list .list_section1_right .list_section4_right svg {
+    margin-right: 2px;
+    fill: #EB5757;
+}
+
+.auctions_list .list_section4_right span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    font-feature-settings: 'zero' on;
+    color: #EB5757;
+}

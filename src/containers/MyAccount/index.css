@@ -1,0 +1,677 @@
+.my_account {
+    padding: 60px 0 0;
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+}
+
+.my_account > h2 {
+    margin: 0 0 30px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+}
+
+.my_account .address {
+    background: #1B1E20;
+    border: 1px solid #2D3439;
+    border-radius: 50px;
+    width: max-content;
+    padding: 15px 30px;
+    margin: auto auto 60px;
+    display: flex;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.my_account .address .icon {
+    margin-left: 30px;
+    width: 24px;
+}
+
+.my_account .address .copy_text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27, 30, 32, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.my_account .address:hover .copy_text,
+.my_account .address .copy_text.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my_account .horizontal_tabs {
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: unset;
+    transition: all 0.3s;
+    position: sticky;
+    top: 80px;
+    z-index: 11;
+}
+
+.my_account.fix .horizontal_tabs {
+    background: #131618;
+}
+
+.my_account .horizontal_tabs .tab {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F2F2F2;
+    text-transform: unset;
+    padding: 15px 20px;
+}
+
+.my_account .active_tab .text {
+    background: linear-gradient(
+            91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my_account .horizontal_tabs > div > span:last-child {
+    background: linear-gradient(
+            91deg, #FAC01E 3.15%, #FC762A 85.66%);
+    height: 3px;
+    border-radius: 20px;
+}
+
+.my_account .filters,
+.my_account .active_card {
+    position: sticky;
+    top: 143px;
+    overflow-y: auto !important;
+    height: calc(100vh - 143px);
+}
+
+.my_account .explore_header {
+    position: sticky;
+    top: 143px;
+    background: #131618;
+    z-index: 1;
+}
+
+.my_account .horizontal_tabs.sticky div[role='tablist'] {
+    justify-content: center;
+    padding: 0 30px;
+    align-items: center;
+}
+
+.my_account .horizontal_tabs .address_div {
+    display: none;
+}
+
+.horizontal_tabs.sticky .address_div {
+    display: flex;
+    /*flex: 1;*/
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 30px;
+}
+
+.my_account .horizontal_tabs .address {
+    margin: unset;
+    font-size: 18px;
+    padding: 6px 20px;
+}
+
+.my_account .horizontal_tabs .address > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+.my_account .explore_main .explore {
+    height: unset;
+}
+
+.my_account .collection_list .list_page a,
+.collection_list .list_page a {
+    text-decoration: none;
+}
+
+/* Activity && Offer Table CSS */
+.activity_table {
+    padding: 40px;
+}
+
+.activity_table > div {
+    background: transparent;
+    box-shadow: unset;
+}
+
+.activity_table table {
+    border-collapse: separate;
+    border-spacing: 0 5px;
+}
+
+.activity_table table thead {
+    background: rgba(70, 70, 70, 0.5);
+}
+
+.activity_table table thead tr {
+    border-radius: 10px 10px 0 0;
+}
+
+.activity_table table thead tr th {
+    background: #46464680;
+    border-bottom: none;
+}
+
+.activity_table table thead tr th div {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.activity_table table thead tr th:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+.activity_table table thead tr th:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+.activity_table table thead tr th:nth-child(1) > span,
+.activity_table table thead tr th:nth-child(2) > span {
+    justify-content: flex-start;
+}
+
+.activity_table table tfoot tr td {
+    border-bottom: none;
+}
+
+.activity_table table thead tr th > span {
+    justify-content: center;
+}
+
+.activity_table table tbody tr {
+    border: 1px solid #22272B;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.activity_table table tbody tr td {
+    border-bottom: none;
+    background: #23282c66;
+}
+
+.activity_table table tbody tr td div {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #F2F2F2;
+}
+
+.activity_table table tbody tr td div .no_data_table {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity_table table tbody tr td .item_value,
+.activity_table table tbody tr td .token_amount,
+.activity_table table tbody tr td .quantity,
+.activity_table table tbody tr td .from_value,
+.activity_table table tbody tr td .to_value,
+.activity_table table tbody tr td .time {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.activity_table table tbody tr td div .from_value {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    text-align: left;
+}
+
+.activity_table table tbody tr td div .token_amount,
+.activity_table table thead tr th:nth-child(2) {
+    width: 160px;
+}
+
+.activity_table table tbody tr td div .time {
+    width: 120px;
+}
+
+.activity_table table tbody tr td .token_amount,
+.activity_table table tbody tr td .quantity,
+.activity_table table tbody tr td .from_value,
+.activity_table table tbody tr td .to_value,
+.activity_table table tbody tr td .time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity_table table tbody tr td .from_value .hash_text,
+.activity_table table tbody tr td .to_value .hash_text {
+    max-width: 150px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #B7B7B7;
+}
+
+.activity_table table tbody tr td .matched_address {
+
+}
+
+.activity_table table tbody tr td .token_amount > span {
+    margin-left: 10px;
+}
+
+.activity_table table tbody tr td .item_value img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.activity_table table tbody tr td .positive_value {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #27AE60;
+}
+
+.activity_table table tbody tr td div.negative_value {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #EB5757;
+}
+
+.activity_table table tbody tr td .link_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.activity_table table tbody tr td .link_div svg {
+    width: 18px;
+    height: 18px;
+}
+
+.activity_table table tbody tr td .action_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.activity_table table tbody tr td .cancel_button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 0;
+    color: unset;
+}
+
+.activity_table table tbody tr td .cancel_button > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activity_table table tbody tr td .cancel_button:before {
+    content: '';
+    position: absolute;
+    background: #23282C;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.activity_table table tbody tr td .cancel_button:after {
+    content: '';
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    z-index: -2;
+    border-radius: 50px;
+}
+
+.activity_table table tbody tr td .accept_button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 50px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    color: #000000;
+}
+
+.activity_table table tbody tr td .tx_hash.matched_address {
+    background: linear-gradient(91.79deg, rgba(250, 192, 30, 0.7) 3.15%, rgba(252, 118, 42, 0.7) 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.activity_table div table tfoot tr td div > div > div > div > svg {
+    fill: #b7b7b778;
+}
+
+.activity_table div table tfoot tr td div > div > div > div button:disabled svg {
+    fill: #b7b7b778;
+}
+
+/*collection list*/
+.collection_list .list_page {
+    padding: 0;
+    border: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.collection_list .list_section2 {
+    border-radius: 10px 10px 0 0;
+}
+
+.collection_list .list_page .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.collection_list .row .list_section3:last-child {
+    align-items: flex-end;
+}
+
+.collection_list .row .list_section3:last-child .list_section3_span {
+    text-align: right;
+}
+
+.collection_list .row .list_section3_div {
+    margin-top: unset;
+    margin-bottom: 3px;
+    width: auto;
+}
+
+.collection_list .row .list_section3_div:hover,
+.collection_list .row .list_section3_div > span:hover,
+.collection_list .list_section3 .list_section3_span {
+    text-decoration: unset;
+    cursor: default;
+}
+
+.collection_list .list_section3 .list_section3_span {
+    width: auto;
+}
+
+.collection_list .list_section3:first-child {
+    width: 60%;
+}
+
+.collection_list .list_section3:last-child {
+    width: 40%;
+}
+
+.collection_list .list_section3:first-child .list_section3_span {
+    text-align: left;
+    width: 100%;
+}
+
+.lists.no_data_list {
+    display: flex;
+}
+
+.owner_nfts .list_section4 > div .lsl_value:hover:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0;
+    border-style: solid;
+}
+
+@media (min-width: 1450px) {
+    .activity_table {
+        display: flex;
+        justify-content: center;
+    }
+
+    .activity_table > div {
+        position: relative;
+        margin: auto;
+        max-width: 1450px;
+        min-width: 1200px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .my_account .horizontal_tabs.sticky div[role='tablist'] {
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: 1050px) {
+    .my_account .horizontal_tabs .tab {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .my_account .horizontal_tabs .tab {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .my_account .horizontal_tabs .address {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .my_account .horizontal_tabs .address > span {
+        width: 150px;
+    }
+
+    .my_account .address .icon {
+        margin-left: 15px;
+        width: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .my_account > h2 {
+        font-size: 34px;
+    }
+
+    .my_account .address {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+
+    .my_account .explore_header {
+        top: 132px;
+    }
+}
+
+@media (max-width: 960px) {
+    .my_account .address {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 860px) {
+    .my_account .address {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 800px) {
+    .my_account .address {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+
+    .my_account .address .icon {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .my_account > h2 {
+        margin-bottom: 20px;
+    }
+
+    .my_account .address {
+        margin-bottom: 40px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: max-content;
+    }
+
+    .my_account .horizontal_tabs .tab {
+        padding: 10px 8px;
+    }
+
+    .my_account .horizontal_tabs .address {
+        font-size: 14px;
+    }
+
+    .my_account .horizontal_tabs .address > span {
+        width: 100px;
+    }
+
+    .my_account .address .icon {
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+
+    .my_account .explore_main.show_active_card .explore {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .activity_table table tbody tr td div {
+        text-align: center;
+    }
+
+    .activity_table table tbody tr td div .token_amount,
+    .activity_table table tbody tr td div .from_value,
+    .activity_table table tbody tr td div .time,
+    .activity_table table thead tr th:nth-child(2) {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .my_account .address {
+        width: 96%;
+        word-break: break-all;
+        flex-wrap: wrap;
+        font-size: 13px;
+        padding: 4px 10px;
+        justify-content: center;
+    }
+
+    .my_account .address > p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+    }
+
+    .my_account .horizontal_tabs .tab {
+        font-size: 16px;
+    }
+
+    .my_account .horizontal_tabs .address {
+        display: none;
+    }
+
+    .activity_table {
+        padding: 20px;
+    }
+
+    .my_account .horizontal_tabs > div > div {
+        flex-wrap: wrap;
+    }
+
+    .my_account .horizontal_tabs > div > span:last-child {
+        display: none;
+    }
+
+    .my_account .horizontal_tabs.sticky div[role='tablist'],
+    .my_account .horizontal_tabs > div > div {
+        flex-wrap: unset;
+        justify-content: flex-start;
+        overflow: auto;
+        padding: 0;
+    }
+
+    .activity_table table thead tr th div {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .my_account .address > p {
+        width: 80%;
+    }
+}

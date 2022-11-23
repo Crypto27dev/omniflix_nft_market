@@ -1,0 +1,119 @@
+.faucet_dialog > div:nth-child(3) > div {
+    background: #141414;
+    border-radius: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: unset;
+}
+
+.faucet_dialog .faucet_dialog_content.claimed_dialog {
+    background-image: url("../../../../assets/tokens/M-Faucet Congrats.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faucet_dialog .faucet_dialog_content > h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.faucet_dialog_content .tokens_list {
+    margin: 50px;
+    background: #1B1B1B;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.token_details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.token_details:last-child {
+    margin-bottom: 0;
+}
+
+.token_left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.token_left > img {
+    width: 50px;
+    margin-right: 15px;
+}
+
+.token_name > span:first-child {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #F2F2F2;
+    margin-bottom: 5px;
+}
+
+.claimed_dialog .token_name > span:first-child {
+    font-size: 16px;
+}
+
+.token_name > span:last-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    font-feature-settings: 'zero' on;
+    color: #8E96AB;
+}
+
+.token_details > button {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F2F2F2;
+    padding: 12px 20px;
+    text-transform: capitalize;
+}
+
+.claimed_tokens {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.claimed_tokens > span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.claimed_tokens .tokens_list {
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.claimed_tokens .tokens_list .secondary_button {
+    margin-left: 30px;
+}

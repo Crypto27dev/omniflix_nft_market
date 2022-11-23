@@ -1,0 +1,442 @@
+.active_card {
+    display: none;
+    width: 600px;
+    height: calc(100vh - 80px);
+    padding: 40px;
+    background: rgba(33, 38, 43, 0.4);
+    border: 1px solid #2F363D;
+    box-shadow: 0 4px 4px #00000040;
+}
+
+.active_card.show {
+    display: block;
+}
+
+.active_card .list_section1 {
+    display: flex;
+}
+
+.active_card .list_section2 {
+    display: inherit;
+    height: auto;
+    padding-bottom: unset;
+}
+
+.active_card .list_section1 {
+    margin-bottom: 20px;
+}
+
+.active_card .list_section1_left > div,
+.active_card .list_section1_right > div {
+    width: 30px;
+    height: 30px;
+}
+
+.active_card .list_section1_left > div img,
+.active_card .list_section1_right > div img,
+.active_card .list_section1_right > div .icon {
+    width: 16px;
+}
+
+.list_section1_left > span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: rgba(70, 70, 70, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 8px 14px;
+    margin-right: 5px;
+}
+
+.list_section1_left > div {
+    margin-right: 5px;
+}
+
+.list_section1_right > div {
+    margin-left: 5px;
+}
+
+.active_card .list_section2 > img,
+.active_card .list_section2 .default_thumbnail > img {
+    width: 100%;
+    height: unset;
+}
+
+.active_card.show .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .list_section3_div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row .list_section3_div span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F2F2F2;
+    opacity: 0.5;
+}
+
+.row .list_section3_div span:hover {
+    text-decoration: underline;
+}
+
+.row .list_section3_div img {
+    margin-left: 10px;
+    width: 26px;
+}
+
+/*.active_card .list_section1_right .list_section1_right_actions {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: flex-end;*/
+/*    background: none;*/
+/*    width: auto;*/
+/*    margin-left: 0;*/
+/*}*/
+
+/*.active_card .list_section1_right_actions > div {*/
+/*    background: rgba(75, 75, 75, 0.5);*/
+/*-webkit-backdrop-filter: blur(10px);*/
+/*    backdrop-filter: blur(10px);*/
+/*    border-radius: 20px;*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin-left: 5px;*/
+/*    cursor: pointer;*/
+/*    padding: 10px;*/
+/*}*/
+
+.active_card_section4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section4_row1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: 'zero' on;
+    color: #F2F2F2;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section4_row1 > a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: 'zero' on;
+    color: #F2F2F2;
+
+    text-align: left;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section4_row1 > a:hover {
+    text-decoration: underline;
+}
+
+.section4_row1 .section4_row1_nft {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.section4_row1 .section4_row1_nft > a {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    font-feature-settings: 'zero' on;
+    color: #F2F2F2;
+    max-width: 120px;
+    margin-left: 5px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.section4_row1 .section4_row1_nft > a:hover:after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+.section4_row2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 145%;
+    color: #939393;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.section5_chips {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section5_chips > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    color: #F2F2F2;
+}
+
+.section5_chips > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.section5_chips > div > span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #939393;
+    background: rgba(33, 38, 43, 0.7);
+    border-radius: 10px;
+    margin-right: 5px;
+    padding: 6px 10px;
+}
+
+/* section6_chips */
+.section6_chips {
+    margin-top: 30px;
+}
+
+.section6_chips .header_section {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section6_chips .header_section > span:nth-child(2) {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.section6_chips .properties {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section6_chips .properties > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background: rgba(33, 38, 43, 0.7);
+    border-radius: 10px;
+    margin-right: 8px;
+    padding: 10px 20px;
+    width: auto;
+}
+
+.section6_chips .properties > div p {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F2F2F2;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.section6_chips .properties > div p.category {
+    text-transform: capitalize;
+}
+
+.section6_chips .properties > div span {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #939393;
+    text-transform: capitalize;
+}
+
+.about_collection > div {
+    background: rgba(33, 38, 43, 0.4);
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 30px !important;
+}
+
+.about_collection .expansion_panel > div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.about_collection .expansion_header {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    color: #939393;
+}
+
+.about_collection .expansion_summary svg {
+    fill: #939393;
+}
+
+.about_collection .expand_details {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    line-height: 145%;
+    color: #939393;
+    text-align: left;
+}
+
+.about_collection .minted_bc {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 145%;
+    color: #F2F2F2;
+    margin-top: 10px;
+}
+
+.about_collection .minted_on_network {
+    color: #939393;
+}
+
+.active_asset_image > img {
+    width: auto;
+    max-height: 500px;
+}
+
+.active_asset_image.active_card_asset > img {
+    max-width: 100%;
+}
+
+.active_card .video-player-dimensions {
+    max-height: 500px;
+}
+
+@media (max-width: 768px) {
+    .active_card {
+        width: 100%;
+    }
+
+    .active_card.show {
+        padding-bottom: 100px;
+    }
+
+    .collection_page .active_card.show {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .active_card {
+        padding: 20px;
+    }
+
+    .active_card .list_section1_left > div,
+    .active_card .list_section1_right > div {
+        width: 26px;
+        height: 26px;
+    }
+
+    .active_card .list_section1_left > div img,
+    .active_card .list_section1_right > div img,
+    .active_card .list_section1_right > div .icon {
+        width: 12px;
+    }
+
+    .active_card .section4_row1 {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    .active_card .section4_row1 > span {
+        width: 100%;
+    }
+
+    .active_card .about_collection > div {
+        margin-top: 10px !important;
+    }
+
+    .row .list_section3_div a {
+        font-size: 14px;
+    }
+
+    .section4_row1 .section4_row1_nft {
+        font-size: 14px;
+    }
+
+    .section4_row1 > a,
+    .section4_row1 .section4_row1_nft > a {
+        font-size: 14px;
+    }
+
+    .section6_chips .header_section {
+        font-size: 14px;
+    }
+
+    .section4_row2 {
+        font-size: 16px;
+    }
+}

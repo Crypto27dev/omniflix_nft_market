@@ -1,0 +1,85 @@
+.buy_nft_dialog .bid_nft {
+    background-image: none;
+}
+
+.bid_nft_section {
+    margin-top: 50px;
+}
+
+.bid_nft_section .bid_nft_section1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bid_nft_section .bid_nft_section1 .balance {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1DA1F2;
+}
+
+.bid_nft_section .amount_field {
+    width: 100%;
+}
+
+.bid_nft_section .amount_field > div > div:nth-child(1) {
+    margin: 0 !important;
+}
+
+.bid_nft_section .amount_field .token_start {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+.bid_nft_section .amount_field .amount_end {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+.bid_nft_section .amount_field input {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.bid_nft_dialog .delist_dialog_action .delist_confirm {
+    color: #000000 !important;
+}
+
+.bid_nft_dialog .delist_dialog_action {
+    justify-content: center;
+}
+
+.bid_nft_section .bid_nft_section2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bid_nft_section .bid_nft_section2 .min_bid {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+}

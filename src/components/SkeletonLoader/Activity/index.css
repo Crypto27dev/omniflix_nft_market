@@ -1,0 +1,14 @@
+.activity_section.activity_skeleton_loader .activity_card .card_section1 > .name {
+    width: 60%;
+}
+
+.activity_section.activity_skeleton_loader .activity_card .card_section2 {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+}
+
+.activity_section.activity_skeleton_loader .card_section3 {
+    margin-left: 30px;
+    flex: 1;
+}

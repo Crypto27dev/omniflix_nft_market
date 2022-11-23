@@ -1,0 +1,728 @@
+.delist {
+    background: rgba(33, 38, 43, .8);
+    border: 1px solid #2f363d;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 20px 40px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.delist .delist_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delist .delist_section > button {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(91.79deg, #fac01e 3.15%, #fc762a 85.66%);
+    border-radius: 5px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 17px 10px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.delist .delist_section > button svg {
+    width: 20PX;
+    height: 20PX;
+    fill: #000;
+    margin-right: 10px;
+}
+
+.delist .delist_section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.delist .delist_section1 .price_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F2F2F2;
+    width: 150px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.delist .delist_section1 .lsr_value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: #F2F2F2;
+    width: 150px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delist .delist_section1 .price_value {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #f2f2f2;
+    margin-top: 5px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Dialog CSS */
+.delist_dialog > div:nth-child(3) > div {
+    position: relative;
+    max-width: 800px;
+    width: 800px;
+    min-height: 500px;
+    background: rgb(24 27 31);
+    border-radius: 20px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delist_dialog .delist_dialog_content {
+    width: 100%;
+    padding: 40px;
+}
+
+.delist_dialog .delist_dialog_content h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+
+.card.delist_info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 0;
+    background: #0E151B;
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.card.delist_info > img {
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card.delist_info .info {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.card.delist_info .info .price_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card.delist_info .info .price_row .nft_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.card.delist_info .info .price_row .price_info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.card.delist_info .info .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.card.delist_info .info .label .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #B7B7B7;
+}
+
+.card.delist_info .info .price_row .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #B7B7B7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+    text-align: left;
+}
+
+.card.delist_info .info .price_row .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.card.delist_info .info .price_row .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delist_dialog_action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.delist_dialog_action > button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    width: 48%;
+    padding: 12px;
+    text-transform: capitalize;
+}
+
+.delist_dialog_action .delist_cancel > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delist_dialog_action .delist_cancel:before {
+    content: '';
+    position: absolute;
+    background: #202429;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.delist_dialog_action .delist_cancel:after {
+    content: '';
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -2;
+    border-radius: 5px;
+}
+
+.delist_dialog_action .delist_confirm {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    margin-left: 20px;
+}
+
+.delist_dialog_action .delist_confirm:disabled {
+    opacity: 0.5;
+}
+
+.delist_dialog_action .delist_confirm > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.delist_dialog_content.delist_success img {
+    margin-top: -50px;
+}
+
+.delist_dialog_content.delist_success > h2 {
+    margin: 30px 0 40px;
+}
+
+.delist_dialog_content.delist_success > span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.delist_dialog_content .tx_hash {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #696969;
+    border: 1px solid #696969;
+    box-sizing: border-box;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 10px;
+}
+
+.delist_dialog_content .tx_hash > div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+
+.delist_dialog_content .tx_hash > div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.delist_dialog_content.delist_success .delist_dialog_action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Confirm Dialog css */
+.confirm_listing .row1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.confirm_listing .left_section {
+    background: #1B1B1B;
+    border: 1px solid #212121;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.confirm_listing .left_section img {
+    width: 250px;
+    height: auto;
+}
+
+.confirm_listing .left_section > p {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background: #d7d7d7;
+}
+
+.confirm_listing .left_section > .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.confirm_listing .left_section > .row .names {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.confirm_listing .left_section > .row .price {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.confirm_listing .left_section > .row > div {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #B7B7B7;
+}
+
+.confirm_listing .left_section > .row .names > span {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.confirm_listing .left_section > .row > div p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.confirm_listing .left_section > .row > .price p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.confirm_listing .left_section > .row > .price p img {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.confirm_listing .right_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.confirm_listing .right_section .row {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.confirm_listing .right_section .row > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+}
+
+.confirm_listing .right_section .hash_text.hash_text_content {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+    max-width: 200px;
+    display: flex;
+}
+
+.confirm_listing .right_section .row .id_css {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+}
+
+.delist_dialog .confirm_listing .total_sale .row {
+    margin-bottom: 5px;
+}
+
+.delist_dialog .confirm_listing .total_sale .row.royalty_splits {
+    padding-left: 30px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.delist_dialog .confirm_listing .total_sale {
+    background: unset;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+.delist_dialog .confirm_listing .total_sale > h3 {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+    text-align: left;
+}
+
+.delist_dialog .confirm_listing .total_sale .row .label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #B7B7B7;
+}
+
+.delist_dialog .confirm_listing .total_sale .row .value {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.delist_dialog .total_sale .row.info .label {
+    display: flex;
+    align-items: baseline;
+}
+
+.delist_dialog .total_sale .row.info .label .tx_hash {
+    border: none;
+    padding: 0;
+}
+
+.confirm_listing .confirm_list_action {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm_listing .confirm_list_action > button {
+    width: 50%;
+    margin-top: 0;
+}
+
+.confirm_listing .confirm_list_action .cancel_button {
+    padding: 15px 80px;
+    background: #1B1B1B;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.confirm_listing .confirm_list_action .primary_button {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+/*Total Sale*/
+.confirm_listing .total_sale {
+    background: #141414;
+    border: 1px solid #353535;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 14px;
+    text-align: left;
+}
+
+.confirm_listing .total_sale > h3 {
+    margin: 0 0 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #B7B7B7;
+}
+
+.confirm_listing .total_sale .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.confirm_listing .total_sale .row.info {
+    opacity: 0.4;
+    margin: 4px 0;
+}
+
+.confirm_listing .total_sale .row .label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B7B7B7;
+}
+
+.confirm_listing .total_sale .row .value {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.confirm_listing .total_sale .row.info .label {
+    display: flex;
+    align-items: baseline;
+}
+
+.confirm_listing .total_sale .creator_royalty svg {
+    fill: #B7B7B7;
+    margin-right: 5px;
+}
+
+.confirm_listing .total_sale .creator_royalty .row {
+    margin-top: 5px;
+}
+
+.confirm_listing .total_sale .creator_royalty .row.splits {
+    margin-top: -12px;
+}
+
+.confirm_listing .total_sale .row.info .hash_text {
+    font-size: 16px;
+}
+
+.confirm_listing .total_sale .row.splits_info .tx_hash,
+.confirm_listing .total_sale .row.splits_info .tx_hash .hash_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.confirm_listing .total_sale .row.splits_info .label svg {
+    fill: #B7B7B7;
+    margin-right: 5px;
+}
+
+.confirm_listing .total_sale .row.splits_info svg {
+    margin-top: -11px;
+}
+
+.confirm_listing .total_sale .row.splits_info .first_arrow {
+    margin-top: 0;
+}
+
+.confirm_listing .total_sale .row.royalty_splits {
+    margin-left: 30px;
+}
+
+.de_list_warning_tooltip > div {
+    background: #22272B;
+    border: 1px solid rgba(75, 75, 75, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 4px 10px #00000080;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.de_list_warning_tooltip .text_content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.de_list_warning_tooltip .text_content svg {
+    fill: #fff;
+    height: 20px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .delist {
+        width: 100%;
+    }
+
+    .delist_dialog > div:nth-child(3) > div {
+        height: 90%;
+        overflow: unset;
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .delist_dialog .delist_dialog_content {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .delist_dialog .delist_dialog_content.delist_success {
+        height: unset;
+        overflow: unset;
+    }
+
+    .delist_dialog .confirm_listing .total_sale .row {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .delist_dialog > div:nth-child(3) > div {
+        padding: 20px;
+    }
+
+    .delist .delist_section1 .price_text {
+        font-size: 14px;
+    }
+
+    .delist .delist_section1 .lsr_value {
+        font-size: 16px;
+    }
+
+    .delist .delist_section > button {
+        font-size: 16px;
+        padding: 14px 10px;
+    }
+}

@@ -1,0 +1,140 @@
+.fee_grant {
+    border: 1px solid #282828;
+    border-radius: 20px;
+    padding: 40px 20px;
+    position: relative;
+    background-image: url("../../../../assets/feeGrant/feeGrant-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.fee_grant > div {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fee_grant > div img {
+    margin-right: 20px;
+}
+
+.fee_grant > p {
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px 0;
+}
+
+.fee_grant > button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'zero' on;
+    color: #000000;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 5px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+
+.fee_grant .allowance_amount {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fee_grant .allowance_amount > div {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #A4A4A4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fee_grant .allowance_amount > div:first-child {
+    margin-right: 20px;
+}
+
+.fee_grant .allowance_amount > div > p {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .fee_grant {
+        padding: 20px;
+    }
+
+    .fee_grant > p {
+        font-size: 14px;
+        margin: 20px 0 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    .fee_grant > div {
+        font-size: 16px;
+    }
+
+    .fee_grant > div img {
+        margin-right: 10px;
+        width: 20px;
+    }
+
+    .fee_grant > p {
+        font-size: 13px;
+    }
+
+    .fee_grant > button {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .fee_grant .allowance_amount > div {
+        font-size: 14px;
+    }
+
+    .fee_grant .allowance_amount > div > p {
+        font-size: 14px;
+    }
+
+    .fee_grant .allowance_amount > div:first-child {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .fee_grant .allowance_amount {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

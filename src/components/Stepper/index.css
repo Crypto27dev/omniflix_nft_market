@@ -1,0 +1,69 @@
+.nucleus_v2 .stepper,
+.dialog .stepper {
+    background: transparent;
+    padding: 0;
+    position: relative;
+}
+
+.nucleus_v2 .stepper .progress_bar,
+.dialog .stepper .progress_bar {
+    position: absolute;
+    height: 6px;
+    top: 22px;
+    background: linear-gradient(91.79deg, #fac01e 3.15%, #fc762a 85.66%);
+    border-radius: 50px;
+}
+
+.stepper > div > div {
+    width: 100%;
+    left: 0;
+}
+
+.stepper .icon {
+    width: 12px;
+}
+
+.stepper .icon_div {
+    position: relative;
+}
+
+.stepper .icon_div:before {
+    content: '';
+    position: absolute;
+    background: #141414;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 50px;
+}
+
+.stepper .icon_div.active:after,
+.stepper .icon_div.completed:after {
+    content: '';
+    background: linear-gradient(91.79deg, #fac01e 3.15%, #fc762a 85.66%);
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    z-index: -2;
+    border-radius: 50px;
+}
+
+.stepper .icon_div.completed:before {
+    content: unset;
+}
+
+.stepper .label span:last-child > span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #E7E7E7;
+    margin-top: 12px;
+}
+
+.stepper .label.action_label {
+    cursor: pointer;
+}

@@ -1,0 +1,18 @@
+.nft_card_skeleton .section1 {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.nft_card_skeleton .section1 .skeleton_loader {
+    width: 60px;
+    height: 24px;
+    margin-right: 5px;
+    border-radius: 20px;
+    transform: unset;
+}
+
+.nft_card_skeleton .list_section4 .skeleton_loader {
+    transform: unset;
+}

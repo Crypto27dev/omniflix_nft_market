@@ -1,0 +1,653 @@
+.dialog.listing_dialog > div:nth-child(3) > div {
+    max-width: 800px;
+    width: 100%;
+    border-radius: 5px;
+    background: #1b1b1b;
+    margin: unset;
+    padding: 20px 0;
+}
+
+.dialog.listing_dialog > div .dialog_content {
+    padding: 40px;
+}
+
+.listing_dialog .select_field .select__menu-list {
+    padding: unset;
+    max-height: 180px;
+}
+
+.listing_dialog h2.title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0 0 35px 0;
+}
+
+.listing_dialog .confirm_listing h2.title {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin: 0 0 10px 0;
+}
+
+.listing_dialog .row .label_info {
+    width: auto;
+    margin: unset;
+}
+
+.listing_dialog .label_info .title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: left;
+    color: #E7E7E7;
+}
+
+.listing_dialog .tabs_content,
+.listing_dialog .choose_price {
+    margin: 15px 0 25px;
+}
+
+.listing_dialog .tabs_content .tab:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.listing_dialog .tabs_content .tab:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.listing_dialog .tabs_content .tab {
+    /*border: 1px solid #696969;*/
+    box-sizing: border-box;
+    height: 46px;
+    width: 50%;
+    min-width: 50%;
+    text-transform: capitalize;
+    background: rgba(33, 38, 43, 0.4);
+    border: 1px solid rgba(75, 75, 75, 0.5);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #828282;
+}
+
+.listing_dialog .tabs_content .tab div > p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #696969;
+    text-transform: capitalize;
+}
+
+.listing_dialog .tabs_content .tab div > span {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.listing_dialog .tabs_content .active_tab {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 5px 0 0 5px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #E7E7E7;
+    border: unset;
+}
+
+.listing_dialog .tabs_content .active_tab > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.listing_dialog .choose_price .select_field_parent {
+    width: 40%;
+    margin-right: 10px;
+}
+
+.listing_dialog .tabs_content > div > span {
+    display: none;
+}
+
+.listing_dialog .text_field > div {
+    border-radius: 5px;
+    height: 50px;
+}
+
+.listing_dialog .text_field.tags_select_field > div {
+    height: auto;
+}
+
+.listing_dialog .choose_price .select_field {
+    width: 100%;
+    margin: unset;
+}
+
+.listing_dialog .choose_price > .text_field {
+    width: 60%;
+}
+
+.listing_dialog .choose_price .select_field .select__control {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+.listing_dialog .select_field > div:first-child > div {
+    background: #141414;
+    height: 50px;
+    border-radius: 0;
+}
+
+.listing_dialog .choose_price .select_field .select__value-container {
+    padding: 8px 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.listing_dialog .choose_price .select_field .select__value-container .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29px;
+    text-align: center;
+    color: #E7E7E7;
+}
+
+.listing_dialog .choose_price .select_field .select__value-container .label svg {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.listing_dialog .primary_button {
+    width: 100%;
+}
+
+.listing_dialog .info_tooltip {
+    margin-left: 6px;
+    cursor: pointer;
+    margin-bottom: -2px;
+}
+
+/*Success dialog*/
+.listing_success .card {
+    display: flex;
+    background: #141414;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.listing_success .card > img {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.listing_success .card > .info {
+    flex: 1;
+    text-align: left;
+}
+
+.listing_success .card .price_row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.listing_success .card .price_row .label {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.listing_success .card .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B7B7B7;
+    display: flex;
+}
+
+.listing_success .buttons_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listing_success .note_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #828282;
+    margin-top: 10px;
+}
+
+.listing_success .card .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F2F2F2;
+}
+
+.listing_success .card .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(
+            90deg, #D61D6A 6.73%, #7645FF 92.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.listing_success .buttons_div > button {
+    width: 48%;
+}
+
+.listing_success .info > .label {
+    margin-bottom: 10px;
+}
+
+.listing_dialog .card .info {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.listing_dialog .card .info .price_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.listing_dialog .card .info .price_row .nft_info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.listing_dialog .card .info .price_row .price_info {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.listing_dialog .card .info .label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.listing_dialog .card .info .label .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #B7B7B7;
+}
+
+.listing_dialog .card .info .price_row .value {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    color: #B7B7B7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 150px;
+    text-align: left;
+}
+
+.listing_dialog .card .info .price_row .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #696969;
+    margin-bottom: 5px;
+}
+
+.listing_dialog .card .info .price_row .price {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.transfer_action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.listing_dialog .split_info_data {
+    /*margin-top: 30px;*/
+}
+
+.listing_dialog .split_info_data .row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.listing_dialog .row .label_info .title_info {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #777777;
+    margin-top: 5px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.listing_dialog .split_info_data .text_field {
+    margin-right: 20px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.listing_dialog .split_info_data .text_field:first-child {
+    width: 50%;
+}
+
+.listing_dialog .split_info_data .text_field:nth-child(2) {
+    width: 40%;
+}
+
+.listing_dialog .split_info_data .plus_button {
+    background: #F2F2F2;
+    color: #1B1B1B;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.listing_dialog .split_info_data .plus_button:disabled {
+    opacity: 0.5;
+}
+
+.listing_dialog .split_info_data .plus_button.hidden {
+    visibility: hidden;
+}
+
+.listing_dialog .split_info_data .remove_button {
+    background: #F2F2F2;
+    color: #1B1B1B;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    padding-bottom: 13px;
+}
+
+.listing_dialog .split_info {
+    display: flex;
+    align-items: center;
+}
+
+.listing_dialog .split_info .label_info {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.listing_dialog .split_info_data .text_field .adornment {
+    margin: unset !important;
+    color: #B7B7B7;
+}
+
+.listing_dialog .split_info_data .text_field.percentage input {
+    padding-left: 12px;
+    padding-right: 6px;
+}
+
+.listing_dialog .date_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listing_dialog .date_section .row {
+    width: 49%;
+}
+
+.listing_dialog .date_section .date_field input {
+    border: none;
+}
+
+.listing_dialog .date_section .date_field .text_field {
+    margin: 10px 0 20px 0;
+}
+
+.listing_dialog .date_section .date_field .text_field > div {
+    background: #141414;
+    color: #696969;
+    border: 1px solid #141414;
+    border-radius: 5px;
+}
+
+.listing_dialog .date_section .date_field .text_field > div:hover {
+    border: 1px solid #3F5A6F;
+}
+
+.listing_dialog .date_section .date_field .text_field fieldset {
+    border: none;
+}
+
+/*Total Sale*/
+.listing_dialog .total_sale {
+    background: #141414;
+    border: 1px solid #353535;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 14px;
+    text-align: left;
+}
+
+.listing_dialog .total_sale > h3 {
+    margin: 0 0 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    color: #B7B7B7;
+}
+
+.listing_dialog .total_sale .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.listing_dialog .total_sale .row.info {
+    opacity: 0.4;
+    margin: 4px 0;
+}
+
+.listing_dialog .total_sale .row .label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #B7B7B7;
+}
+
+.listing_dialog .total_sale .row .value {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.listing_dialog .total_sale .row.info .label {
+    display: flex;
+    align-items: baseline;
+}
+
+.listing_dialog .total_sale .creator_royalty svg {
+    fill: #B7B7B7;
+    margin-right: 5px;
+}
+
+.listing_dialog .total_sale .creator_royalty .row {
+    margin-top: 5px;
+}
+
+.listing_dialog .total_sale .creator_royalty .row.splits {
+    margin-top: -12px;
+}
+
+.listing_dialog .total_sale .row.info .hash_text {
+    font-size: 16px;
+}
+
+.listing_dialog .total_sale .row.splits_info .tx_hash,
+.listing_dialog .total_sale .row.splits_info .tx_hash .hash_text {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.listing_dialog .total_sale .row.splits_info .label svg {
+    fill: #B7B7B7;
+    margin-right: 5px;
+}
+
+.listing_dialog .total_sale .row.splits_info svg {
+    margin-top: -11px;
+}
+
+.listing_dialog .total_sale .row.splits_info .first_arrow {
+    margin-top: 0;
+}
+
+.listing_dialog .total_sale .row.royalty_splits {
+    margin-left: 30px;
+}
+
+@media (max-width: 425px) {
+    .dialog.listing_dialog > div:nth-child(3) > div {
+        padding: 0;
+    }
+
+    .dialog.listing_dialog > div .dialog_content {
+        padding: 20px;
+    }
+
+    .listing_dialog h2.title {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .listing_dialog .tabs_content div[role='tablist'] {
+        flex-direction: column;
+    }
+
+    .listing_dialog .tabs_content .tab {
+        border-radius: 0;
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .listing_dialog .tabs_content .tab div > p {
+        font-size: 16px;
+    }
+
+    .listing_dialog .choose_price .select_field_parent {
+        width: 100%;
+        margin: unset;
+    }
+
+    .listing_dialog .choose_price > .text_field {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .listing_dialog .split_info .label_info {
+        width: 80%;
+    }
+
+    .listing_dialog .split_info_data .row {
+        flex-wrap: wrap;
+    }
+
+    .listing_dialog .split_info_data .text_field:first-child {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .listing_dialog .split_info_data .text_field:nth-child(2) {
+        width: 80%;
+    }
+
+    .transfer_action {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .listing_dialog .card .info {
+        padding: unset;
+        margin-top: 20px;
+    }
+
+    .listing_dialog .label_info .title {
+        font-size: 12px;
+    }
+
+    .dialog.listing_dialog > div:nth-child(3) > div {
+        max-width: 90%;
+        width: 90%;
+        min-width: 90%;
+    }
+}

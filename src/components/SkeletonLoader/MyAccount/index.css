@@ -1,0 +1,16 @@
+.my_account_skeleton {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_account_skeleton .skeleton_address {
+    width: 100%;
+    height: 43px;
+    transform: unset;
+    margin-top: 30px;
+    border-radius: 50px;
+    margin-bottom: 60px;
+}

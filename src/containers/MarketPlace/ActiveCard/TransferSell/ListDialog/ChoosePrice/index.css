@@ -1,0 +1,36 @@
+.choose_price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.choose_price > div {
+    height: 50px;
+}
+
+.choose_price .select_field_parent {
+    width: 45%;
+}
+
+.choose_price .text_field {
+    width: 50%;
+}
+
+.choose_price .select_field .select__control {
+    height: 50px;
+}
+
+.choose_price .select_field .select__value-container {
+    padding: 8px 20px;
+}
+
+@media (max-width: 425px) {
+    .choose_price {
+        flex-direction: column;
+    }
+
+    .choose_price > div {
+        width: 100%;
+    }
+}

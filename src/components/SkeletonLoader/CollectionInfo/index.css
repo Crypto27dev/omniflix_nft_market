@@ -1,0 +1,21 @@
+.collection_skeleton .text_section {
+    width: 240px;
+}
+
+.collection_skeleton .items_count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.collection_skeleton .collection_section2 .skeleton_loader {
+    transform: unset;
+}
+
+.collection_skeleton .total_tokens_traded {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

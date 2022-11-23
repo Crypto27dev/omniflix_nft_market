@@ -1,0 +1,393 @@
+.data_table > div:first-child,
+.data_table > div:first-child > div {
+    background-color: #181A1D;
+}
+
+.data_table > div:first-child > div button {
+    color: #898989;
+}
+
+.data_table > div:first-child > div button:hover {
+    background: none;
+}
+
+.data_table > div:first-child {
+    /*width: 500px;*/
+    /*min-width: 500px;*/
+    /*max-width: 1000px;*/
+    font-family: 'Sarabun', sans-serif;
+    font-style: normal;
+}
+
+.data_table > div:first-child > div > div h6 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.data_table > div:first-child table tbody tr {
+    cursor: pointer;
+}
+
+.data_table > div:first-child table tbody tr:hover {
+    background: none;
+}
+
+.content .data_table > div:first-child table tbody tr:hover td,
+.content .data_table > div:first-child table tbody tr:hover th {
+    background: #1e1e1e;
+}
+
+.data_table > div:first-child table thead tr th:first-child,
+.data_table > div:first-child table tbody tr td:first-child {
+    padding-left: 20px;
+}
+
+.data_table > div:first-child table thead tr th:last-child,
+.data_table > div:first-child table tbody tr td:last-child {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.data_table > div:first-child table thead tr th:last-child > span {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.data_table > div:first-child table tbody tr td,
+.data_table > div:first-child table thead tr th {
+    border-bottom: 1px solid #0e0f11;
+}
+
+.data_table > div:first-child table thead tr th {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #898989 !important;
+    z-index: 10;
+    background-color: #181A1D;
+}
+
+.data_table > div:first-child table thead tr th:last-child div {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+
+.data_table > div:first-child table thead tr th > span:hover,
+.data_table > div:first-child table thead tr th > span:active,
+.data_table > div:first-child table thead tr th > span:focus,
+.data_table > div:first-child table thead tr th > span:hover svg,
+.data_table > div:first-child table thead tr th > span:active svg,
+.data_table > div:first-child table thead tr th > span:focus svg {
+    color: #898989 !important;
+}
+
+.data_table > div:first-child table tfoot tr td {
+    border-bottom: 0;
+}
+
+.data_table > div:first-child table tbody tr td {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.data_table > div:first-child table tfoot tr td {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #898989;
+}
+
+.data_table > div:first-child table tfoot tr td svg,
+.data_table > div:first-child > div > div > div svg {
+    color: #898989;
+}
+
+.data_table > div:first-child table tfoot tr td div > button:disabled svg {
+    color: #89898987;
+}
+
+/*.data_table > div:first-child > div > div > div div > div,*/
+/*.data_table > div:first-child > div > div > div div > div:hover {*/
+/*    border-bottom: 1px solid #898989;*/
+/*}*/
+
+.data_table > div:first-child > div > div > div div input {
+    color: #fff;
+    height: 20px;
+}
+
+.ff_studio .data_table > div:first-child > div > div > div div div::before,
+.ff_studio .data_table > div:first-child > div > div > div div div::after {
+    border-bottom: 1px solid #333333;
+}
+
+.data_table .add_icon svg {
+    width: 20px;
+    height: 20px;
+    fill: #898989;
+}
+
+.data_table .add_icon {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    min-width: 48px;
+    border-radius: 50%;
+}
+
+.data_table .add_icon:hover {
+    border-radius: 50% !important;
+}
+
+fieldset > div > label svg {
+    color: #FAC01E !important;
+}
+
+/* assets overview tables */
+
+.data_table .add_icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.data_table table tfoot tr td {
+    border-bottom: 1px solid #0e0f1170;
+    font-family: 'Sarabun', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #626060;
+}
+
+.data_table table tfoot tr td svg {
+    color: #626060;
+}
+
+.data_table table thead tr th {
+    background: #202123;
+    border-bottom: 1px solid #0e0f1170;
+}
+
+.data_table table thead tr th:nth-child(1) span {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.data_table table thead tr th div,
+.data_table table thead tr th span {
+    font-family: 'Sarabun', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #626060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data_table table tbody tr td:nth-child(2) {
+    text-align: left;
+}
+
+.data_table table tbody tr td {
+    font-family: 'Sarabun', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 154.41%;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    border-bottom: 1px solid #0e0f1170;
+}
+
+.data_table .row_action > button {
+    background: #62606057;
+    border-radius: 50%;
+    width: 30px;
+    min-width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.data_table .row_action > button img {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data_table .assets_type img {
+    margin-right: 10px;
+}
+
+.data_table .assets_type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: none;
+}
+
+.data_table .assets_type .text::first-letter {
+    text-transform: capitalize;
+}
+
+.data_table .encode_asset {
+    font-family: 'Sarabun', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FAC01E !important;
+    border: 1px solid #FAC01E;
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 44px;
+    margin: 0 20px;
+    width: 100px;
+}
+
+.source_tooltip {
+    position: relative;
+}
+
+.source_tooltip .title {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -17px;
+}
+
+.source_tooltip .title.upper_case {
+    text-transform: uppercase;
+}
+
+.source_tooltip:hover .title {
+    display: flex;
+    justify-content: center;
+}
+
+.data_table .source_css {
+    text-transform: uppercase;
+}
+
+.data_table > div > div:nth-child(3) {
+    overflow: auto;
+    height: 100%;
+    /*display: flex;*/
+    justify-content: center;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.data_table > div > div:nth-child(3)::-webkit-scrollbar-thumb {
+    border: 0 solid #fff;
+    box-shadow: inset 0 0 0 20px rgba(0, 0, 0, .24);
+    border-radius: 20px;
+    background: #fff;
+}
+
+.data_table > div > div:nth-child(3)::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 4px;
+}
+
+tfoot div {
+    color: #ffffff;
+}
+
+@media (max-width: 1050px) {
+    .stream_actions_section .start_button {
+        padding: 0 !important;
+        width: 80px;
+        margin-right: 10px;
+    }
+
+    .stream_actions_section .stop_button {
+        padding: 0 !important;
+        width: 80px;
+    }
+
+    .air_section > div {
+        width: 60px;
+        padding: 7px 0;
+    }
+
+    .channels_field .select_field {
+        width: 100px !important;
+    }
+
+    .program > .header .header_left .name {
+        margin-right: 0 !important;
+    }
+}
+
+/*@media (min-width: 760px) and (max-width: 800px) {*/
+/*    .data_table > div {*/
+/*        width: 500px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 801px) and (max-width: 900px) {*/
+/*    .data_table > div {*/
+/*        width: 550px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 901px) and (max-width: 950px) {*/
+/*    .data_table > div {*/
+/*        width: 600px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 951px) and (max-width: 1040px) {*/
+/*    .data_table > div {*/
+/*        width: 700px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1041px) and (max-width: 1140px) {*/
+/*    .data_table > div {*/
+/*        width: 800px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1141px) and (max-width: 1250px) {*/
+/*    .data_table > div {*/
+/*        width: 900px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1251px) and (max-width: 1300px) {*/
+/*    .data_table > div {*/
+/*        width: 950px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/
+
+/*@media (min-width: 1301px) and (max-width: 1350px) {*/
+/*    .data_table > div {*/
+/*        width: 1000px !important;*/
+/*        max-width: 1000px;*/
+/*    }*/
+/*}*/

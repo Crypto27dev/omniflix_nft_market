@@ -1,0 +1,299 @@
+.right_panel {
+    position: relative;
+}
+
+.purchase_card {
+    background: rgba(33, 38, 43, 0.9);
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 0;
+    padding: 20px 40px;
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.purchase_card_s4 > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.purchase_card .price_text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F2F2F2;
+    margin-bottom: 10px;
+}
+
+.purchase_card .price_amount {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 24px;
+    font-feature-settings: 'zero' on;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 20px;
+}
+
+.purchase_card .price_denom {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    font-feature-settings: 'zero' on;
+    color: #F2F2F2;
+    width: 160px;
+    margin-right: 40px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.purchase_card_s1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #F2F2F2;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.purchase_card_s1 > span {
+    margin-right: 20px;
+}
+
+/* purchase tab */
+.purchase_tab {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.purchase_tab > button {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #F2F2F2;
+    text-transform: capitalize;
+
+    background: rgba(33, 38, 43, 0.4);
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.purchase_tab > button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.purchase_tab > button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.purchase_tab .active_purchase {
+    color: #000000;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+}
+
+.purchase_card_s2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.purchase_card_s2 > h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2F2F2;
+    margin: 0;
+}
+
+.purchase_card_s2 > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F2F2F2;
+    margin-top: 5px;
+}
+
+/* validity Tab */
+.purchase_card_s3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.purchase_card_s3 > span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F2F2F2;
+    width: 150px;
+    text-align: left;
+}
+
+.validity_tab {
+
+}
+
+.validity_tab .default_validity.active_validity {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    background: #000000;
+    opacity: inherit;
+    border: 1px solid #000000;
+}
+
+.validity_tab .active_validity > span {
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.validity_tab .default_validity {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.005em;
+    color: #F2F2F2;
+    opacity: 0.5;
+    text-transform: capitalize;
+    height: 30px;
+    background: rgba(33, 38, 43, 0.4);
+
+    border: 1px solid #2F363D;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+.validity_tab > button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.validity_tab > button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.purchase_card_s4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.purchase_card_s4 > span:first-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F2F2F2;
+    width: 150px;
+    text-align: left;
+}
+
+.purchase_card_s4 > span:last-child {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    color: #F2F2F2;
+    width: 150px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.purchase_card .purchase_license {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(91.79deg, #FAC01E 3.15%, #FC762A 85.66%);
+    border-radius: 5px;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 17px 10px;
+    margin-top: 10px;
+    color: #000;
+    height: 56px;
+}
+
+.purchase_card .purchase_license[disabled] {
+    opacity: 0.6;
+}
+
+.purchase_card .purchase_license.warning {
+    background: #EB5757;
+    color: #fff;
+}
+
+.purchase_card .purchase_license svg {
+    width: 20PX;
+    height: 20PX;
+    fill: #fff;
+    margin-right: 10px;
+}
+
+.warning_ibc_tooltip.collect_tooltip .text_content {
+    align-items: flex-start;
+}
+
+.warning_ibc_tooltip.collect_tooltip > div {
+    max-width: 400px;
+}
+
+.purchase_card .purchase_license .circular_progress {
+    height: inherit;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchase_card .purchase_license > span {
+    background: linear-gradient(180deg, #0E151B 0%, #000000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .right_panel,
+    .purchase_card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .purchase_card {
+        padding: 20px;
+    }
+}

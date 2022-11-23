@@ -1,0 +1,26 @@
+.accordion {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.accordion .summary {
+    width: 100%;
+    padding: 19px 20px;
+}
+
+.accordion .summary p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #F2F2F2;
+}
+
+.accordion .summary svg {
+    fill: #F2F2F2;
+}
+
+.accordion .Mui-expanded svg {
+    fill: url(#paint0_linear);
+}

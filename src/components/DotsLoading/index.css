@@ -1,0 +1,36 @@
+.spinner {
+    width: 100px;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spinner > div {
+    width: 10px;
+    margin: 0 2px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    display: inline-block;
+    animation: bounce_delay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce_delay {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1.0);
+    }
+}

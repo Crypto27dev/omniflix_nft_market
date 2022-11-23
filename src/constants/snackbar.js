@@ -1,0 +1,2 @@
+export const SNACKBAR_HIDE = 'SNACKBAR_HIDE';
+export const MESSAGE_SHOW = 'MESSAGE_SHOW';

@@ -1,0 +1,21 @@
+.circular_progress {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular_progress.full_screen {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #00000070;
+    z-index: 9;
+}
+
+.circular_progress > div {
+    color: #3E8EF7;
+}

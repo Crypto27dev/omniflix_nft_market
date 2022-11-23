@@ -1,0 +1,270 @@
+.confirm_listing .row1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.confirm_listing .left_section {
+    background: #1B1B1B;
+    border: 1px solid #212121;
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+}
+
+.confirm_listing .left_section img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.confirm_listing .left_section > p {
+    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    background: #d7d7d7;
+}
+
+.confirm_listing .left_section > .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.confirm_listing .left_section > .row .names {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.confirm_listing .left_section > .row .price {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.confirm_listing .left_section > .row > div {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #B7B7B7;
+}
+
+.confirm_listing .left_section > .row .names > span {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+
+.confirm_listing .left_section > .row > div p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    font-feature-settings: 'zero' on;
+    color: #FFFFFF;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+}
+
+.confirm_listing .left_section > .row > .price p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.confirm_listing .left_section > .row > .price p img {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.confirm_listing .right_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    margin-left: 20px;
+}
+
+.confirm_listing .right_section .row {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #B7B7B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.confirm_listing .right_section .row > p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+}
+
+.confirm_listing .right_section .hash_text.hash_text_content {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+    max-width: 200px;
+    display: flex;
+}
+
+.confirm_listing .right_section .row .id_css {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 0;
+    text-overflow: ellipsis;
+}
+
+.listing_dialog .confirm_listing .total_sale .row {
+    margin-bottom: 5px;
+}
+
+.listing_dialog .confirm_listing .total_sale .row.royalty_splits {
+    padding-left: 30px;
+    width: 100%;
+    margin-left: 0;
+}
+
+.listing_dialog .confirm_listing .total_sale {
+    background: unset;
+    border: none;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+}
+
+.listing_dialog .confirm_listing .total_sale > h3 {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F2F2F2;
+}
+
+.listing_dialog .confirm_listing .total_sale .row .label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #B7B7B7;
+}
+
+.listing_dialog .confirm_listing .total_sale .row .value {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.confirm_listing .confirm_list_action {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirm_listing .confirm_list_action > button {
+    width: 50%;
+    margin-top: 0;
+}
+
+.confirm_listing .confirm_list_action .cancel_button {
+    padding: 15px 80px;
+    background: #1B1B1B;
+    border-radius: 5px;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.confirm_listing .confirm_list_action .primary_button {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .confirm_listing .row1 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    .confirm_listing .right_section {
+        margin: unset;
+    }
+
+    .confirm_listing .right_section .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .listing_dialog .confirm_listing .total_sale .row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .confirm_listing .left_section {
+        padding: 0;
+    }
+
+    .confirm_listing .confirm_list_action {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .confirm_listing .confirm_list_action > button {
+        width: 100%;
+    }
+
+    .confirm_listing .confirm_list_action .delist_confirm {
+        margin: 10px 0 0;
+    }
+}
